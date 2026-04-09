@@ -1,0 +1,587 @@
+{
+  "Black Han Sans Regular": {
+    "file_name": "black-han-sans.ttf",
+    "file_path": "static\\fonts\\black-han-sans.ttf",
+    "postscript_name": "BlackHanSans-Regular",
+    "family_name": "Black Han Sans",
+    "full_name": "Black Han Sans Regular",
+    "ffmpeg_name": "BlackHanSans-Regular",
+    "display_name": "검은고딕"
+  },
+  "BM EULJIRO TTF": {
+    "file_name": "BMEULJIROTTF.ttf",
+    "file_path": "static\\fonts\\BMEULJIROTTF.ttf",
+    "postscript_name": "BMEULJIROTTF",
+    "family_name": "BM EULJIRO TTF",
+    "full_name": "BM EULJIRO TTF",
+    "ffmpeg_name": "BMEULJIROTTF",
+    "display_name": "배민 을지로체"
+  },
+  "Gmarket Sans TTF Bold": {
+    "file_name": "GmarketSansTTFBold.ttf",
+    "file_path": "static\\fonts\\GmarketSansTTFBold.ttf",
+    "postscript_name": "GmarketSansTTFBold",
+    "family_name": "Gmarket Sans TTF",
+    "full_name": "Gmarket Sans TTF Bold",
+    "ffmpeg_name": "GmarketSansTTFBold",
+    "display_name": "지마켓 산스 Bold"
+  },
+  "Gmarket Sans TTF Light": {
+    "file_name": "GmarketSansTTFLight.ttf",
+    "file_path": "static\\fonts\\GmarketSansTTFLight.ttf",
+    "postscript_name": "GmarketSansTTFLight",
+    "family_name": "Gmarket Sans TTF",
+    "full_name": "Gmarket Sans TTF Light",
+    "ffmpeg_name": "GmarketSansTTFLight",
+    "display_name": "지마켓 산스 Light"
+  },
+  "Gmarket Sans TTF Medium": {
+    "file_name": "GmarketSansTTFMedium.ttf",
+    "file_path": "static\\fonts\\GmarketSansTTFMedium.ttf",
+    "postscript_name": "GmarketSansTTFMedium",
+    "family_name": "Gmarket Sans TTF",
+    "full_name": "Gmarket Sans TTF Medium",
+    "ffmpeg_name": "GmarketSansTTFMedium",
+    "display_name": "지마켓 산스 Medium"
+  },
+  "NanumBarunGothic": {
+    "file_name": "NanumBarunGothic.ttf",
+    "file_path": "static\\fonts\\NanumBarunGothic.ttf",
+    "postscript_name": "NanumBarunGothic",
+    "family_name": "NanumBarunGothic",
+    "full_name": "NanumBarunGothic",
+    "ffmpeg_name": "NanumBarunGothic",
+    "display_name": "나눔바른고딕"
+  },
+  "NanumBarunGothic Bold": {
+    "file_name": "NanumBarunGothicBold.ttf",
+    "file_path": "static\\fonts\\NanumBarunGothicBold.ttf",
+    "postscript_name": "NanumBarunGothicBold",
+    "family_name": "NanumBarunGothic",
+    "full_name": "NanumBarunGothic Bold",
+    "ffmpeg_name": "NanumBarunGothicBold",
+    "display_name": "나눔바른고딕 Bold"
+  },
+  "NanumBarunGothic Light": {
+    "file_name": "NanumBarunGothicLight.ttf",
+    "file_path": "static\\fonts\\NanumBarunGothicLight.ttf",
+    "postscript_name": "NanumBarunGothicLight",
+    "family_name": "NanumBarunGothic",
+    "full_name": "NanumBarunGothic Light",
+    "ffmpeg_name": "NanumBarunGothicLight",
+    "display_name": "나눔바른고딕 Light"
+  },
+  "NanumBarunGothic UltraLight": {
+    "file_name": "NanumBarunGothicUltraLight.ttf",
+    "file_path": "static\\fonts\\NanumBarunGothicUltraLight.ttf",
+    "postscript_name": "NanumBarunGothicUltraLight",
+    "family_name": "NanumBarunGothic",
+    "full_name": "NanumBarunGothic UltraLight",
+    "ffmpeg_name": "NanumBarunGothicUltraLight",
+    "display_name": "나눔바른고딕 UltraLight"
+  },
+  "NanumBarunpen Bold": {
+    "file_name": "NanumBarunpenB.ttf",
+    "file_path": "static\\fonts\\NanumBarunpenB.ttf",
+    "postscript_name": "NanumBarunpen-Bold",
+    "family_name": "NanumBarunpen",
+    "full_name": "NanumBarunpen Bold",
+    "ffmpeg_name": "NanumBarunpen-Bold",
+    "display_name": "나눔바른펜 Bold"
+  },
+  "NanumBarunpen": {
+    "file_name": "NanumBarunpenR.ttf",
+    "file_path": "static\\fonts\\NanumBarunpenR.ttf",
+    "postscript_name": "NanumBarunpen",
+    "family_name": "NanumBarunpen",
+    "full_name": "NanumBarunpen",
+    "ffmpeg_name": "NanumBarunpen",
+    "display_name": "나눔바른펜"
+  },
+  "Nanum Brush Script": {
+    "file_name": "NanumBrush.ttf",
+    "file_path": "static\\fonts\\NanumBrush.ttf",
+    "postscript_name": "NanumBrush",
+    "family_name": "Nanum Brush Script",
+    "full_name": "Nanum Brush Script",
+    "ffmpeg_name": "NanumBrush",
+    "display_name": "나눔손글씨 붓"
+  },
+  "NanumGothic": {
+    "file_name": "NanumGothic.ttf",
+    "file_path": "static\\fonts\\NanumGothic.ttf",
+    "postscript_name": "NanumGothic",
+    "family_name": "NanumGothic",
+    "full_name": "NanumGothic",
+    "ffmpeg_name": "NanumGothic",
+    "display_name": "나눔고딕"
+  },
+  "NanumGothic Bold": {
+    "file_name": "NanumGothicBold.ttf",
+    "file_path": "static\\fonts\\NanumGothicBold.ttf",
+    "postscript_name": "NanumGothicBold",
+    "family_name": "NanumGothic",
+    "full_name": "NanumGothic Bold",
+    "ffmpeg_name": "NanumGothicBold",
+    "display_name": "나눔고딕 Bold"
+  },
+  "NanumGothic ExtraBold": {
+    "file_name": "NanumGothicExtraBold.ttf",
+    "file_path": "static\\fonts\\NanumGothicExtraBold.ttf",
+    "postscript_name": "NanumGothicExtraBold",
+    "family_name": "NanumGothic",
+    "full_name": "NanumGothic ExtraBold",
+    "ffmpeg_name": "NanumGothicExtraBold",
+    "display_name": "나눔고딕 ExtraBold"
+  },
+  "NanumGothic Light": {
+    "file_name": "NanumGothicLight.ttf",
+    "file_path": "static\\fonts\\NanumGothicLight.ttf",
+    "postscript_name": "NanumGothicLight",
+    "family_name": "NanumGothic",
+    "full_name": "NanumGothic Light",
+    "ffmpeg_name": "NanumGothicLight",
+    "display_name": "나눔고딕 Light"
+  },
+  "NanumMyeongjo": {
+    "file_name": "NanumMyeongjo.ttf",
+    "file_path": "static\\fonts\\NanumMyeongjo.ttf",
+    "postscript_name": "NanumMyeongjo",
+    "family_name": "NanumMyeongjo",
+    "full_name": "NanumMyeongjo",
+    "ffmpeg_name": "NanumMyeongjo",
+    "display_name": "나눔명조"
+  },
+  "NanumMyeongjo Bold": {
+    "file_name": "NanumMyeongjoBold.ttf",
+    "file_path": "static\\fonts\\NanumMyeongjoBold.ttf",
+    "postscript_name": "NanumMyeongjoBold",
+    "family_name": "NanumMyeongjo",
+    "full_name": "NanumMyeongjo Bold",
+    "ffmpeg_name": "NanumMyeongjoBold",
+    "display_name": "나눔명조 Bold"
+  },
+  "NanumMyeongjo ExtraBold": {
+    "file_name": "NanumMyeongjoExtraBold.ttf",
+    "file_path": "static\\fonts\\NanumMyeongjoExtraBold.ttf",
+    "postscript_name": "NanumMyeongjoExtraBold",
+    "family_name": "NanumMyeongjo",
+    "full_name": "NanumMyeongjo ExtraBold",
+    "ffmpeg_name": "NanumMyeongjoExtraBold",
+    "display_name": "나눔명조 ExtraBold"
+  },
+  "Nanum Pen Script": {
+    "file_name": "NanumPen.ttf",
+    "file_path": "static\\fonts\\NanumPen.ttf",
+    "postscript_name": "NanumPen",
+    "family_name": "Nanum Pen Script",
+    "full_name": "Nanum Pen Script",
+    "ffmpeg_name": "NanumPen",
+    "display_name": "나눔손글씨 펜"
+  },
+  "Noto Sans Black": {
+    "file_name": "NotoSans-Black.ttf",
+    "file_path": "static\\fonts\\NotoSans-Black.ttf",
+    "postscript_name": "NotoSans-Black",
+    "family_name": "Noto Sans Blk",
+    "full_name": "Noto Sans Black",
+    "ffmpeg_name": "NotoSans-Black",
+    "display_name": "노토 산스 Black"
+  },
+  "Noto Sans Black Italic": {
+    "file_name": "NotoSans-BlackItalic.ttf",
+    "file_path": "static\\fonts\\NotoSans-BlackItalic.ttf",
+    "postscript_name": "NotoSans-BlackItalic",
+    "family_name": "Noto Sans Blk",
+    "full_name": "Noto Sans Black Italic",
+    "ffmpeg_name": "NotoSans-BlackItalic",
+    "display_name": "노토 산스 Black Italic"
+  },
+  "Noto Sans Bold": {
+    "file_name": "NotoSans-Bold.ttf",
+    "file_path": "static\\fonts\\NotoSans-Bold.ttf",
+    "postscript_name": "NotoSans-Bold",
+    "family_name": "Noto Sans",
+    "full_name": "Noto Sans Bold",
+    "ffmpeg_name": "NotoSans-Bold",
+    "display_name": "노토 산스 Bold"
+  },
+  "Noto Sans Bold Italic": {
+    "file_name": "NotoSans-BoldItalic.ttf",
+    "file_path": "static\\fonts\\NotoSans-BoldItalic.ttf",
+    "postscript_name": "NotoSans-BoldItalic",
+    "family_name": "Noto Sans",
+    "full_name": "Noto Sans Bold Italic",
+    "ffmpeg_name": "NotoSans-BoldItalic",
+    "display_name": "노토 산스 Bold Italic"
+  },
+  "Recipekorea Medium": {
+    "file_name": "Recipekorea 레코체 FONT.ttf",
+    "file_path": "static\\fonts\\Recipekorea 레코체 FONT.ttf",
+    "postscript_name": "RecipekoreaM",
+    "family_name": "Recipekorea Medium",
+    "full_name": "Recipekorea Medium",
+    "ffmpeg_name": "RecipekoreaM",
+    "display_name": "레시피코리아 레코체"
+  },
+  "SB Aggro Bold": {
+    "file_name": "SB 어그로 B.ttf",
+    "file_path": "static\\fonts\\SB 어그로 B.ttf",
+    "postscript_name": "SBAggroB",
+    "family_name": "SB Aggro Bold",
+    "full_name": "SB Aggro Bold",
+    "ffmpeg_name": "SBAggroB",
+    "display_name": "SB 어그로 Bold"
+  },
+  "SB Aggro Light": {
+    "file_name": "SB 어그로 L.ttf",
+    "file_path": "static\\fonts\\SB 어그로 L.ttf",
+    "postscript_name": "SBAggroL",
+    "family_name": "SB Aggro Light",
+    "full_name": "SB Aggro Light",
+    "ffmpeg_name": "SBAggroL",
+    "display_name": "SB 어그로 Light"
+  },
+  "SB Aggro Medium": {
+    "file_name": "SB 어그로 M.ttf",
+    "file_path": "static\\fonts\\SB 어그로 M.ttf",
+    "postscript_name": "SBAggroM",
+    "family_name": "SB Aggro Medium",
+    "full_name": "SB Aggro Medium",
+    "ffmpeg_name": "SBAggroM",
+    "display_name": "SB 어그로 Medium"
+  },
+  "tvN Enjoystories Bold": {
+    "file_name": "tvN 즐거운이야기 Bold.ttf",
+    "file_path": "static\\fonts\\tvN 즐거운이야기 Bold.ttf",
+    "postscript_name": "tvNEnjoystoriesB",
+    "family_name": "tvN Enjoystories Bold",
+    "full_name": "tvN Enjoystories Bold",
+    "ffmpeg_name": "tvNEnjoystoriesB",
+    "display_name": "tvN 즐거운이야기 Bold"
+  },
+  "tvN Enjoystories Light": {
+    "file_name": "tvN 즐거운이야기 Light.ttf",
+    "file_path": "static\\fonts\\tvN 즐거운이야기 Light.ttf",
+    "postscript_name": "tvNEnjoystoriesL",
+    "family_name": "tvN Enjoystories Light",
+    "full_name": "tvN Enjoystories Light",
+    "ffmpeg_name": "tvNEnjoystoriesL",
+    "display_name": "tvN 즐거운이야기 Light"
+  },
+  "tvN Enjoystories Medium": {
+    "file_name": "tvN 즐거운이야기 Medium.ttf",
+    "file_path": "static\\fonts\\tvN 즐거운이야기 Medium.ttf",
+    "postscript_name": "tvNEnjoystoriesM",
+    "family_name": "tvN Enjoystories Medium",
+    "full_name": "tvN Enjoystories Medium",
+    "ffmpeg_name": "tvNEnjoystoriesM",
+    "display_name": "tvN 즐거운이야기 Medium"
+  },
+  "Y Spotlight": {
+    "file_name": "Y 너만을 비춤체.ttf",
+    "file_path": "static\\fonts\\Y 너만을 비춤체.ttf",
+    "postscript_name": "yspotlight-regular",
+    "family_name": "Y Spotlight",
+    "full_name": "Y Spotlight",
+    "ffmpeg_name": "yspotlight-regular",
+    "display_name": "Y 너만을 비춤체"
+  },
+  "GyeonggiTitle Bold": {
+    "file_name": "경기천년제목_Bold.ttf",
+    "file_path": "static\\fonts\\경기천년제목_Bold.ttf",
+    "postscript_name": "GyeonggiTitleB",
+    "family_name": "GyeonggiTitle Bold",
+    "full_name": "GyeonggiTitle Bold",
+    "ffmpeg_name": "GyeonggiTitleB",
+    "display_name": "경기천년제목 Bold"
+  },
+  "GyeonggiTitle Light": {
+    "file_name": "경기천년제목_Light.ttf",
+    "file_path": "static\\fonts\\경기천년제목_Light.ttf",
+    "postscript_name": "GyeonggiTitleL",
+    "family_name": "GyeonggiTitle Light",
+    "full_name": "GyeonggiTitle Light",
+    "ffmpeg_name": "GyeonggiTitleL",
+    "display_name": "경기천년제목 Light"
+  },
+  "GyeonggiTitle Medium": {
+    "file_name": "경기천년제목_Medium.ttf",
+    "file_path": "static\\fonts\\경기천년제목_Medium.ttf",
+    "postscript_name": "GyeonggiTitleM",
+    "family_name": "GyeonggiTitle Medium",
+    "full_name": "GyeonggiTitle Medium",
+    "ffmpeg_name": "GyeonggiTitleM",
+    "display_name": "경기천년제목 Medium"
+  },
+  "BM DoHyeon": {
+    "file_name": "도현체 ttf.ttf",
+    "file_path": "static\\fonts\\도현체 ttf.ttf",
+    "postscript_name": "BMDoHyeon",
+    "family_name": "BM DoHyeon",
+    "full_name": "BM DoHyeon",
+    "ffmpeg_name": "BMDoHyeon",
+    "display_name": "배민 도현체"
+  },
+  "TmonMonsori Black": {
+    "file_name": "몬소리체.ttf",
+    "file_path": "static\\fonts\\몬소리체.ttf",
+    "postscript_name": "TmonMonsoriBlack",
+    "family_name": "TmonMonsori",
+    "full_name": "TmonMonsori Black",
+    "ffmpeg_name": "TmonMonsoriBlack",
+    "display_name": "티몬 몬소리체"
+  },
+  "VITRO CORE TTF": {
+    "file_name": "비트로 코어 TTF.ttf",
+    "file_path": "static\\fonts\\비트로 코어 TTF.ttf",
+    "postscript_name": "VITRO-CORE-TTF",
+    "family_name": "VITRO CORE TTF",
+    "full_name": "VITRO CORE TTF",
+    "ffmpeg_name": "VITRO-CORE-TTF",
+    "display_name": "비트로 코어"
+  },
+  "Yanolja Yache Bold": {
+    "file_name": "야놀자 야체 TTF Bold.ttf",
+    "file_path": "static\\fonts\\야놀자 야체 TTF Bold.ttf",
+    "postscript_name": "YanoljaYacheB",
+    "family_name": "Yanolja Yache",
+    "full_name": "Yanolja Yache Bold",
+    "ffmpeg_name": "YanoljaYacheB",
+    "display_name": "야놀자 야체 Bold"
+  },
+  "Yanolja Yache Regular": {
+    "file_name": "야놀자 야체 TTF Regular.ttf",
+    "file_path": "static\\fonts\\야놀자 야체 TTF Regular.ttf",
+    "postscript_name": "YanoljaYacheR",
+    "family_name": "Yanolja Yache",
+    "full_name": "Yanolja Yache Regular",
+    "ffmpeg_name": "YanoljaYacheR",
+    "display_name": "야놀자 야체"
+  },
+  "Chosun Centennial": {
+    "file_name": "ChosunCentennial_otf.otf",
+    "file_path": "static\\fonts\\ChosunCentennial_otf.otf",
+    "postscript_name": "ChosunCentennial",
+    "family_name": "Chosun Centennial",
+    "full_name": "Chosun Centennial",
+    "ffmpeg_name": "ChosunCentennial",
+    "display_name": "조선일보명조"
+  },
+  "Jalnan 2": {
+    "file_name": "Jalnan2.otf",
+    "file_path": "static\\fonts\\Jalnan2.otf",
+    "postscript_name": "Jalnan2",
+    "family_name": "Jalnan 2",
+    "full_name": "Jalnan 2",
+    "ffmpeg_name": "Jalnan2",
+    "display_name": "잘난체 2"
+  },
+  "Jalnan Gothic": {
+    "file_name": "JalnanGothic.otf",
+    "file_path": "static\\fonts\\JalnanGothic.otf",
+    "postscript_name": "JalnanGothic",
+    "family_name": "Jalnan Gothic",
+    "full_name": "Jalnan Gothic",
+    "ffmpeg_name": "JalnanGothic",
+    "display_name": "잘난체 고딕"
+  },
+  "NanumSquareOTF Bold": {
+    "file_name": "NanumSquareB.otf",
+    "file_path": "static\\fonts\\NanumSquareB.otf",
+    "postscript_name": "NanumSquareOTFB",
+    "family_name": "NanumSquareOTF",
+    "full_name": "NanumSquareOTF Bold",
+    "ffmpeg_name": "NanumSquareOTFB",
+    "display_name": "나눔스퀘어 Bold"
+  },
+  "NanumSquareOTF ExtraBold": {
+    "file_name": "NanumSquareEB.otf",
+    "file_path": "static\\fonts\\NanumSquareEB.otf",
+    "postscript_name": "NanumSquareOTFEB",
+    "family_name": "NanumSquareOTF",
+    "full_name": "NanumSquareOTF ExtraBold",
+    "ffmpeg_name": "NanumSquareOTFEB",
+    "display_name": "나눔스퀘어 ExtraBold"
+  },
+  "NanumSquareOTF Light": {
+    "file_name": "NanumSquareL.otf",
+    "file_path": "static\\fonts\\NanumSquareL.otf",
+    "postscript_name": "NanumSquareOTFL",
+    "family_name": "NanumSquareOTF",
+    "full_name": "NanumSquareOTF Light",
+    "ffmpeg_name": "NanumSquareOTFL",
+    "display_name": "나눔스퀘어 Light"
+  },
+  "NanumSquareOTF_ac Bold": {
+    "file_name": "NanumSquareOTF_acB.otf",
+    "file_path": "static\\fonts\\NanumSquareOTF_acB.otf",
+    "postscript_name": "NanumSquareOTF_acB",
+    "family_name": "NanumSquareOTF_ac",
+    "full_name": "NanumSquareOTF_ac Bold",
+    "ffmpeg_name": "NanumSquareOTF_acB",
+    "display_name": "나눔스퀘어ac Bold"
+  },
+  "NanumSquareOTF_ac ExtraBold": {
+    "file_name": "NanumSquareOTF_acEB.otf",
+    "file_path": "static\\fonts\\NanumSquareOTF_acEB.otf",
+    "postscript_name": "NanumSquareOTF_acEB",
+    "family_name": "NanumSquareOTF_ac",
+    "full_name": "NanumSquareOTF_ac ExtraBold",
+    "ffmpeg_name": "NanumSquareOTF_acEB",
+    "display_name": "나눔스퀘어ac ExtraBold"
+  },
+  "NanumSquareOTF_ac Light": {
+    "file_name": "NanumSquareOTF_acL.otf",
+    "file_path": "static\\fonts\\NanumSquareOTF_acL.otf",
+    "postscript_name": "NanumSquareOTF_acL",
+    "family_name": "NanumSquareOTF_ac",
+    "full_name": "NanumSquareOTF_ac Light",
+    "ffmpeg_name": "NanumSquareOTF_acL",
+    "display_name": "나눔스퀘어ac Light"
+  },
+  "NanumSquareOTF_ac Regular": {
+    "file_name": "NanumSquareOTF_acR.otf",
+    "file_path": "static\\fonts\\NanumSquareOTF_acR.otf",
+    "postscript_name": "NanumSquareOTF_acR",
+    "family_name": "NanumSquareOTF_ac",
+    "full_name": "NanumSquareOTF_ac Regular",
+    "ffmpeg_name": "NanumSquareOTF_acR",
+    "display_name": "나눔스퀘어ac"
+  },
+  "NanumSquareOTF Regular": {
+    "file_name": "NanumSquareR.otf",
+    "file_path": "static\\fonts\\NanumSquareR.otf",
+    "postscript_name": "NanumSquareOTFR",
+    "family_name": "NanumSquareOTF",
+    "full_name": "NanumSquareOTF Regular",
+    "ffmpeg_name": "NanumSquareOTFR",
+    "display_name": "나눔스퀘어"
+  },
+  "Pretendard Bold": {
+    "file_name": "Pretendard-Bold.otf",
+    "file_path": "static\\fonts\\Pretendard-Bold.otf",
+    "postscript_name": "Pretendard-Bold",
+    "family_name": "Pretendard",
+    "full_name": "Pretendard Bold",
+    "ffmpeg_name": "Pretendard-Bold",
+    "display_name": "프리텐다드 Bold"
+  },
+  "Pretendard Light": {
+    "file_name": "Pretendard-Light.otf",
+    "file_path": "static\\fonts\\Pretendard-Light.otf",
+    "postscript_name": "Pretendard-Light",
+    "family_name": "Pretendard Light",
+    "full_name": "Pretendard Light",
+    "ffmpeg_name": "Pretendard-Light",
+    "display_name": "프리텐다드 Light"
+  },
+  "Pretendard Regular": {
+    "file_name": "Pretendard-Regular.otf",
+    "file_path": "static\\fonts\\Pretendard-Regular.otf",
+    "postscript_name": "Pretendard-Regular",
+    "family_name": "Pretendard",
+    "full_name": "Pretendard Regular",
+    "ffmpeg_name": "Pretendard-Regular",
+    "display_name": "프리텐다드"
+  },
+  "S-Core Dream 1 Thin": {
+    "file_name": "SCDream1.otf",
+    "file_path": "static\\fonts\\SCDream1.otf",
+    "postscript_name": "S-CoreDream-1Thin",
+    "family_name": "S-Core Dream 1 Thin",
+    "full_name": "S-Core Dream 1 Thin",
+    "ffmpeg_name": "S-CoreDream-1Thin",
+    "display_name": "에스코어 드림 1 Thin"
+  },
+  "S-Core Dream 2 ExtraLight": {
+    "file_name": "SCDream2.otf",
+    "file_path": "static\\fonts\\SCDream2.otf",
+    "postscript_name": "S-CoreDream-2ExtraLight",
+    "family_name": "S-Core Dream 2 ExtraLight",
+    "full_name": "S-Core Dream 2 ExtraLight",
+    "ffmpeg_name": "S-CoreDream-2ExtraLight",
+    "display_name": "에스코어 드림 2 ExtraLight"
+  },
+  "S-Core Dream 3 Light": {
+    "file_name": "SCDream3.otf",
+    "file_path": "static\\fonts\\SCDream3.otf",
+    "postscript_name": "S-CoreDream-3Light",
+    "family_name": "S-Core Dream 3 Light",
+    "full_name": "S-Core Dream 3 Light",
+    "ffmpeg_name": "S-CoreDream-3Light",
+    "display_name": "에스코어 드림 3 Light"
+  },
+  "S-Core Dream 4 Regular": {
+    "file_name": "SCDream4.otf",
+    "file_path": "static\\fonts\\SCDream4.otf",
+    "postscript_name": "S-CoreDream-4Regular",
+    "family_name": "S-Core Dream 4 Regular",
+    "full_name": "S-Core Dream 4 Regular",
+    "ffmpeg_name": "S-CoreDream-4Regular",
+    "display_name": "에스코어 드림 4"
+  },
+  "S-Core Dream 5 Medium": {
+    "file_name": "SCDream5.otf",
+    "file_path": "static\\fonts\\SCDream5.otf",
+    "postscript_name": "S-CoreDream-5Medium",
+    "family_name": "S-Core Dream 5 Medium",
+    "full_name": "S-Core Dream 5 Medium",
+    "ffmpeg_name": "S-CoreDream-5Medium",
+    "display_name": "에스코어 드림 5 Medium"
+  },
+  "S-Core Dream 6 Bold": {
+    "file_name": "SCDream6.otf",
+    "file_path": "static\\fonts\\SCDream6.otf",
+    "postscript_name": "S-CoreDream-6Bold",
+    "family_name": "S-Core Dream 6 Bold",
+    "full_name": "S-Core Dream 6 Bold",
+    "ffmpeg_name": "S-CoreDream-6Bold",
+    "display_name": "에스코어 드림 6 Bold"
+  },
+  "S-Core Dream 7 ExtraBold": {
+    "file_name": "SCDream7.otf",
+    "file_path": "static\\fonts\\SCDream7.otf",
+    "postscript_name": "S-CoreDream-7ExtraBold",
+    "family_name": "S-Core Dream 7 ExtraBold",
+    "full_name": "S-Core Dream 7 ExtraBold",
+    "ffmpeg_name": "S-CoreDream-7ExtraBold",
+    "display_name": "에스코어 드림 7 ExtraBold"
+  },
+  "S-Core Dream 8 Heavy": {
+    "file_name": "SCDream8.otf",
+    "file_path": "static\\fonts\\SCDream8.otf",
+    "postscript_name": "S-CoreDream-8Heavy",
+    "family_name": "S-Core Dream 8 Heavy",
+    "full_name": "S-Core Dream 8 Heavy",
+    "ffmpeg_name": "S-CoreDream-8Heavy",
+    "display_name": "에스코어 드림 8 Heavy"
+  },
+  "S-Core Dream 9 Black": {
+    "file_name": "SCDream9.otf",
+    "file_path": "static\\fonts\\SCDream9.otf",
+    "postscript_name": "S-CoreDream-9Black",
+    "family_name": "S-Core Dream 9 Black",
+    "full_name": "S-Core Dream 9 Black",
+    "ffmpeg_name": "S-CoreDream-9Black",
+    "display_name": "에스코어 드림 9 Black"
+  },
+  "BM JUA OTF": {
+    "file_name": "배민 주아체_otf.otf",
+    "file_path": "static\\fonts\\배민 주아체_otf.otf",
+    "postscript_name": "BMJUAOTF",
+    "family_name": "BM JUA OTF",
+    "full_name": "BM JUA OTF",
+    "ffmpeg_name": "BMJUAOTF",
+    "display_name": "배민 주아체"
+  },
+  "Jalnan OTF": {
+    "file_name": "잘난체OTF.otf",
+    "file_path": "static\\fonts\\잘난체OTF.otf",
+    "postscript_name": "JalnanOTF",
+    "family_name": "Jalnan OTF",
+    "full_name": "Jalnan OTF",
+    "ffmpeg_name": "JalnanOTF",
+    "display_name": "잘난체"
+  }
+}

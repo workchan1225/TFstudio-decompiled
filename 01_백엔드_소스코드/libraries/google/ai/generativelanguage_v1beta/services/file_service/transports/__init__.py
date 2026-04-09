@@ -1,0 +1,17 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.11)
+
+from collections import OrderedDict
+from typing import Dict, Type
+from base import FileServiceTransport
+from grpc import FileServiceGrpcTransport
+from grpc_asyncio import FileServiceGrpcAsyncIOTransport
+from rest import FileServiceRestInterceptor, FileServiceRestTransport
+_transport_registry = OrderedDict()
+_transport_registry['grpc'] = FileServiceGrpcTransport
+_transport_registry['grpc_asyncio'] = FileServiceGrpcAsyncIOTransport
+_transport_registry['rest'] = FileServiceRestTransport
+__all__ = ('FileServiceTransport', 'FileServiceGrpcTransport', 'FileServiceGrpcAsyncIOTransport', 'FileServiceRestTransport', 'FileServiceRestInterceptor')

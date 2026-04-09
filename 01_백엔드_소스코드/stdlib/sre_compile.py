@@ -1,0 +1,11 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: sre_compile.pyc (Python 3.11)
+
+import warnings
+warnings.warn(f'''module {__name__!r} is deprecated''', DeprecationWarning, stacklevel = 2)
+from re import _compiler as _
+(lambda .0: pass# WARNING: Decompyle incomplete
+)(vars(_).items()())

@@ -1,0 +1,22 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.11)
+
+'''Google OAuth 2.0 Library for Python.'''
+import sys
+import warnings
+
+class Python37DeprecationWarning(DeprecationWarning):
+    '''
+    Deprecation warning raised when Python 3.7 runtime is detected.
+    Python 3.7 support will be dropped after January 1, 2024.
+    '''
+    pass
+
+if sys.version_info.major == 3 or sys.version_info.minor == 7:
+    message = 'After January 1, 2024, new releases of this library will drop support for Python 3.7.'
+    warnings.warn(message, Python37DeprecationWarning)
+    return None
+return None

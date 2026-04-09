@@ -1,0 +1,26 @@
+{
+  "_version": "1.0.0",
+  "_description": "Historical context keywords and rules - Single Source of Truth",
+  "historical_context_keywords": [
+    "조선", "조선시대", "고려", "삼국시대", "신라", "백제", "고구려",
+    "사극", "역사극", "야담", "한옥", "궁궐", "왕", "왕비", "양반", "선비",
+    "무림", "무협", "강호", "협객", "검객",
+    "joseon", "goryeo", "sageuk", "historical korean", "korean dynasty",
+    "period drama", "ancient korea", "traditional korean village",
+    "wuxia", "medieval", "feudal", "dynasty"
+  ],
+  "historical_genre_codes": [
+    "JOSEON_FOLKTALE",
+    "HISTORICAL",
+    "MUHYUP",
+    "THREE_KINGDOMS"
+  ],
+  "historical_style_categories": [
+    "animation_folktale",
+    "animation_sageuk",
+    "animation_rural",
+    "traditional_folktale",
+    "traditional_minhwa",
+    "traditional_ink_wash"
+  ]
+}

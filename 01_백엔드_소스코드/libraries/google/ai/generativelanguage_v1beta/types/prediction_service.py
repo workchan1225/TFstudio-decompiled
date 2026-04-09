@@ -1,0 +1,44 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: prediction_service.pyc (Python 3.11)
+
+from __future__ import annotations
+from typing import MutableMapping, MutableSequence
+from google.protobuf import struct_pb2
+import proto
+__protobuf__ = proto.module(package = 'google.ai.generativelanguage.v1beta', manifest = {
+    'PredictRequest',
+    'PredictResponse'})
+
+class PredictRequest(proto.Message):
+    '''Request message for
+    [PredictionService.Predict][google.ai.generativelanguage.v1beta.PredictionService.Predict].
+
+    Attributes:
+        model (str):
+            Required. The name of the model for prediction. Format:
+            ``name=models/{model}``.
+        instances (MutableSequence[google.protobuf.struct_pb2.Value]):
+            Required. The instances that are the input to
+            the prediction call.
+        parameters (google.protobuf.struct_pb2.Value):
+            Optional. The parameters that govern the
+            prediction call.
+    '''
+    model: 'str' = proto.Field(proto.STRING, number = 1)
+    instances: 'MutableSequence[struct_pb2.Value]' = proto.RepeatedField(proto.MESSAGE, number = 2, message = struct_pb2.Value)
+    parameters: 'struct_pb2.Value' = proto.Field(proto.MESSAGE, number = 3, message = struct_pb2.Value)
+
+
+class PredictResponse(proto.Message):
+    '''Response message for [PredictionService.Predict].
+
+    Attributes:
+        predictions (MutableSequence[google.protobuf.struct_pb2.Value]):
+            The outputs of the prediction call.
+    '''
+    predictions: 'MutableSequence[struct_pb2.Value]' = proto.RepeatedField(proto.MESSAGE, number = 1, message = struct_pb2.Value)
+
+__all__ = tuple(sorted(__protobuf__.manifest))

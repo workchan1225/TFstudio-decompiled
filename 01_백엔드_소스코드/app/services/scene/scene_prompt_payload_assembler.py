@@ -1,0 +1,16 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: scene_prompt_payload_assembler.pyc (Python 3.11)
+
+from dataclasses import dataclass, field
+from typing import Any, Callable, Dict, List, Optional, Sequence, Set
+from utils.character_name_matcher import normalize_character_name
+from prompt.scene_diversity_guidance import build_scene_composition_hint
+from prompt.scene_multimodal_prompt_blocks import build_multimodal_continuity_reference_instruction, build_multimodal_final_reminder, build_multimodal_negative_prompt_suffix, build_multimodal_prompt_with_context, build_multimodal_reference_image_instruction, build_multimodal_reference_policy_lines, build_reference_style_locked_negative_extensions, build_text_only_character_dedup_instruction, build_text_only_forbidden_composition_instruction, build_text_only_negative_prompt_suffix
+from scene_framing_policy import resolve_scene_composition_subject_count
+from reference_character_style_policy import add_style_bleeding_blockers_for_reference_lock, build_reference_character_style_lock_block, collect_reference_style_locked_names_for_prompt, relax_realism_blockers_for_reference_lock, relax_style_consistency_negative_for_reference_lock
+ScenePromptPayloadAssembly = <NODE:12>()
+
+def _resolve_composition_count(*, character_count, scene_actor_profile):

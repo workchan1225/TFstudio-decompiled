@@ -1,0 +1,62 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: analysis.pyc (Python 3.11)
+
+'''
+A collection of analysis utilities
+'''
+from ctypes import POINTER, c_char_p, c_int
+from llvmlite.binding import ffi
+from llvmlite.binding.module import parse_assembly
+
+def get_function_cfg(func, show_inst = (True,)):
+    '''Return a string of the control-flow graph of the function in DOT
+    format. If the input `func` is not a materialized function, the module
+    containing the function is parsed to create an actual LLVM module.
+    The `show_inst` flag controls whether the instructions of each block
+    are printed.
+    '''
+    pass
+# WARNING: Decompyle incomplete
+
+
+def view_dot_graph(graph, filename, view = (None, False)):
+    '''
+    View the given DOT source.  If view is True, the image is rendered
+    and viewed by the default application in the system.  The file path of
+    the output is returned.  If view is False, a graphviz.Source object is
+    returned.  If view is False and the environment is in a IPython session,
+    an IPython image object is returned and can be displayed inline in the
+    notebook.
+
+    This function requires the graphviz package.
+
+    Args
+    ----
+    - graph [str]: a DOT source code
+    - filename [str]: optional.  if given and view is True, this specifies
+                      the file path for the rendered output to write to.
+    - view [bool]: if True, opens the rendered output file.
+
+    '''
+    import graphviz as gv
+    src = gv.Source(graph)
+    if view:
+        return src.render(filename, view = view)
+    
+    try:
+        __IPYTHON__
+        display = display
+        import IPython.display
+        format = 'svg'
+        return display.SVG(data = src.pipe(format))
+    except NameError:
+        return 
+
+
+ffi.lib.LLVMPY_WriteCFG.argtypes = [
+    ffi.LLVMValueRef,
+    POINTER(c_char_p),
+    c_int]

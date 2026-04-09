@@ -1,0 +1,111 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: eval_create_params.pyc (Python 3.11)
+
+from __future__ import annotations
+from typing import Dict, Union, Iterable, Optional
+from typing_extensions import Literal, Required, TypeAlias, TypedDict
+from _types import SequenceNotStr
+from shared_params.metadata import Metadata
+from graders.grader_inputs_param import GraderInputsParam
+from graders.python_grader_param import PythonGraderParam
+from graders.score_model_grader_param import ScoreModelGraderParam
+from graders.string_check_grader_param import StringCheckGraderParam
+from responses.response_input_text_param import ResponseInputTextParam
+from graders.text_similarity_grader_param import TextSimilarityGraderParam
+from responses.response_input_audio_param import ResponseInputAudioParam
+__all__ = [
+    'EvalCreateParams',
+    'DataSourceConfig',
+    'DataSourceConfigCustom',
+    'DataSourceConfigLogs',
+    'DataSourceConfigStoredCompletions',
+    'TestingCriterion',
+    'TestingCriterionLabelModel',
+    'TestingCriterionLabelModelInput',
+    'TestingCriterionLabelModelInputSimpleInputMessage',
+    'TestingCriterionLabelModelInputEvalItem',
+    'TestingCriterionLabelModelInputEvalItemContent',
+    'TestingCriterionLabelModelInputEvalItemContentOutputText',
+    'TestingCriterionLabelModelInputEvalItemContentInputImage',
+    'TestingCriterionTextSimilarity',
+    'TestingCriterionPython',
+    'TestingCriterionScoreModel']
+
+def EvalCreateParams():
+    '''EvalCreateParams'''
+    name: 'str' = 'EvalCreateParams'
+
+EvalCreateParams = <NODE:27>(EvalCreateParams, 'EvalCreateParams', TypedDict, total = False)
+
+def DataSourceConfigCustom():
+    '''DataSourceConfigCustom'''
+    include_sample_schema: 'bool' = '\n    A CustomDataSourceConfig object that defines the schema for the data source used for the evaluation runs.\n    This schema is used to define the shape of the data that will be:\n    - Used to define your testing criteria and\n    - What data is required when creating a run\n    '
+
+DataSourceConfigCustom = <NODE:27>(DataSourceConfigCustom, 'DataSourceConfigCustom', TypedDict, total = False)
+
+def DataSourceConfigLogs():
+    '''DataSourceConfigLogs'''
+    metadata: 'Dict[str, object]' = '\n    A data source config which specifies the metadata property of your logs query.\n    This is usually metadata like `usecase=chatbot` or `prompt-version=v2`, etc.\n    '
+
+DataSourceConfigLogs = <NODE:27>(DataSourceConfigLogs, 'DataSourceConfigLogs', TypedDict, total = False)
+
+def DataSourceConfigStoredCompletions():
+    '''DataSourceConfigStoredCompletions'''
+    metadata: 'Dict[str, object]' = 'Deprecated in favor of LogsDataSourceConfig.'
+
+DataSourceConfigStoredCompletions = <NODE:27>(DataSourceConfigStoredCompletions, 'DataSourceConfigStoredCompletions', TypedDict, total = False)
+DataSourceConfig: 'TypeAlias' = Union[(DataSourceConfigCustom, DataSourceConfigLogs, DataSourceConfigStoredCompletions)]
+
+def TestingCriterionLabelModelInputSimpleInputMessage():
+    '''TestingCriterionLabelModelInputSimpleInputMessage'''
+    role: 'Required[str]' = 'TestingCriterionLabelModelInputSimpleInputMessage'
+
+TestingCriterionLabelModelInputSimpleInputMessage = <NODE:27>(TestingCriterionLabelModelInputSimpleInputMessage, 'TestingCriterionLabelModelInputSimpleInputMessage', TypedDict, total = False)
+
+def TestingCriterionLabelModelInputEvalItemContentOutputText():
+    '''TestingCriterionLabelModelInputEvalItemContentOutputText'''
+    type: "Required[Literal['output_text']]" = 'A text output from the model.'
+
+TestingCriterionLabelModelInputEvalItemContentOutputText = <NODE:27>(TestingCriterionLabelModelInputEvalItemContentOutputText, 'TestingCriterionLabelModelInputEvalItemContentOutputText', TypedDict, total = False)
+
+def TestingCriterionLabelModelInputEvalItemContentInputImage():
+    '''TestingCriterionLabelModelInputEvalItemContentInputImage'''
+    detail: 'str' = 'An image input block used within EvalItem content arrays.'
+
+TestingCriterionLabelModelInputEvalItemContentInputImage = <NODE:27>(TestingCriterionLabelModelInputEvalItemContentInputImage, 'TestingCriterionLabelModelInputEvalItemContentInputImage', TypedDict, total = False)
+TestingCriterionLabelModelInputEvalItemContent: 'TypeAlias' = Union[(str, ResponseInputTextParam, TestingCriterionLabelModelInputEvalItemContentOutputText, TestingCriterionLabelModelInputEvalItemContentInputImage, ResponseInputAudioParam, GraderInputsParam)]
+
+def TestingCriterionLabelModelInputEvalItem():
+    '''TestingCriterionLabelModelInputEvalItem'''
+    type: "Literal['message']" = '\n    A message input to the model with a role indicating instruction following\n    hierarchy. Instructions given with the `developer` or `system` role take\n    precedence over instructions given with the `user` role. Messages with the\n    `assistant` role are presumed to have been generated by the model in previous\n    interactions.\n    '
+
+TestingCriterionLabelModelInputEvalItem = <NODE:27>(TestingCriterionLabelModelInputEvalItem, 'TestingCriterionLabelModelInputEvalItem', TypedDict, total = False)
+TestingCriterionLabelModelInput: 'TypeAlias' = Union[(TestingCriterionLabelModelInputSimpleInputMessage, TestingCriterionLabelModelInputEvalItem)]
+
+def TestingCriterionLabelModel():
+    '''TestingCriterionLabelModel'''
+    type: "Required[Literal['label_model']]" = '\n    A LabelModelGrader object which uses a model to assign labels to each item\n    in the evaluation.\n    '
+
+TestingCriterionLabelModel = <NODE:27>(TestingCriterionLabelModel, 'TestingCriterionLabelModel', TypedDict, total = False)
+
+def TestingCriterionTextSimilarity():
+    '''TestingCriterionTextSimilarity'''
+    pass_threshold: 'Required[float]' = 'A TextSimilarityGrader object which grades text based on similarity metrics.'
+
+TestingCriterionTextSimilarity = <NODE:27>(TestingCriterionTextSimilarity, 'TestingCriterionTextSimilarity', TextSimilarityGraderParam, total = False)
+
+def TestingCriterionPython():
+    '''TestingCriterionPython'''
+    pass_threshold: 'float' = 'A PythonGrader object that runs a python script on the input.'
+
+TestingCriterionPython = <NODE:27>(TestingCriterionPython, 'TestingCriterionPython', PythonGraderParam, total = False)
+
+def TestingCriterionScoreModel():
+    '''TestingCriterionScoreModel'''
+    pass_threshold: 'float' = 'A ScoreModelGrader object that uses a model to assign a score to the input.'
+
+TestingCriterionScoreModel = <NODE:27>(TestingCriterionScoreModel, 'TestingCriterionScoreModel', ScoreModelGraderParam, total = False)
+TestingCriterion: 'TypeAlias' = Union[(TestingCriterionLabelModel, StringCheckGraderParam, TestingCriterionTextSimilarity, TestingCriterionPython, TestingCriterionScoreModel)]

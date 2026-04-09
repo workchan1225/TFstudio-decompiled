@@ -1,0 +1,26 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.11)
+
+from __future__ import annotations
+from translation import Translation
+from speech_model import SpeechModel
+from transcription import Transcription
+from transcription_word import TranscriptionWord
+from translation_verbose import TranslationVerbose
+from speech_create_params import SpeechCreateParams
+from transcription_include import TranscriptionInclude
+from transcription_segment import TranscriptionSegment
+from transcription_verbose import TranscriptionVerbose
+from transcription_diarized import TranscriptionDiarized
+from translation_create_params import TranslationCreateParams
+from transcription_stream_event import TranscriptionStreamEvent
+from transcription_create_params import TranscriptionCreateParams
+from translation_create_response import TranslationCreateResponse
+from transcription_create_response import TranscriptionCreateResponse
+from transcription_text_done_event import TranscriptionTextDoneEvent
+from transcription_diarized_segment import TranscriptionDiarizedSegment
+from transcription_text_delta_event import TranscriptionTextDeltaEvent
+from transcription_text_segment_event import TranscriptionTextSegmentEvent

@@ -1,0 +1,55 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: offsets.pyc (Python 3.11)
+
+from __future__ import annotations
+from pandas._libs.tslibs.offsets import FY5253, BaseOffset, BDay, BHalfYearBegin, BHalfYearEnd, BMonthBegin, BMonthEnd, BQuarterBegin, BQuarterEnd, BusinessDay, BusinessHour, BusinessMonthBegin, BusinessMonthEnd, BYearBegin, BYearEnd, CBMonthBegin, CBMonthEnd, CDay, CustomBusinessDay, CustomBusinessHour, CustomBusinessMonthBegin, CustomBusinessMonthEnd, DateOffset, Day, Easter, FY5253Quarter, HalfYearBegin, HalfYearEnd, Hour, LastWeekOfMonth, Micro, Milli, Minute, MonthBegin, MonthEnd, Nano, QuarterBegin, QuarterEnd, Second, SemiMonthBegin, SemiMonthEnd, Tick, Week, WeekOfMonth, YearBegin, YearEnd
+__all__ = [
+    'FY5253',
+    'BDay',
+    'BHalfYearBegin',
+    'BHalfYearEnd',
+    'BMonthBegin',
+    'BMonthEnd',
+    'BQuarterBegin',
+    'BQuarterEnd',
+    'BYearBegin',
+    'BYearEnd',
+    'BaseOffset',
+    'BusinessDay',
+    'BusinessHour',
+    'BusinessMonthBegin',
+    'BusinessMonthEnd',
+    'CBMonthBegin',
+    'CBMonthEnd',
+    'CDay',
+    'CustomBusinessDay',
+    'CustomBusinessHour',
+    'CustomBusinessMonthBegin',
+    'CustomBusinessMonthEnd',
+    'DateOffset',
+    'Day',
+    'Easter',
+    'FY5253Quarter',
+    'HalfYearBegin',
+    'HalfYearEnd',
+    'Hour',
+    'LastWeekOfMonth',
+    'Micro',
+    'Milli',
+    'Minute',
+    'MonthBegin',
+    'MonthEnd',
+    'Nano',
+    'QuarterBegin',
+    'QuarterEnd',
+    'Second',
+    'SemiMonthBegin',
+    'SemiMonthEnd',
+    'Tick',
+    'Week',
+    'WeekOfMonth',
+    'YearBegin',
+    'YearEnd']

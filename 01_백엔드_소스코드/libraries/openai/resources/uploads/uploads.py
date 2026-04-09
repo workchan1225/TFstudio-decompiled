@@ -1,0 +1,342 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: uploads.pyc (Python 3.11)
+
+from __future__ import annotations
+import io
+import os
+import logging
+import builtins
+from typing import overload
+from pathlib import Path
+import anyio
+import httpx
+from  import _legacy_response
+from parts import Parts, AsyncParts, PartsWithRawResponse, AsyncPartsWithRawResponse, PartsWithStreamingResponse, AsyncPartsWithStreamingResponse
+from types import FilePurpose, upload_create_params, upload_complete_params
+from _types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
+from _utils import maybe_transform, async_maybe_transform
+from _compat import cached_property
+from _resource import SyncAPIResource, AsyncAPIResource
+from _response import to_streamed_response_wrapper, async_to_streamed_response_wrapper
+from _base_client import make_request_options
+from types.upload import Upload
+from types.file_purpose import FilePurpose
+__all__ = [
+    'Uploads',
+    'AsyncUploads']
+DEFAULT_PART_SIZE = 67108864
+log: 'logging.Logger' = logging.getLogger(__name__)
+
+class Uploads(SyncAPIResource):
+    parts = (lambda self = None: Parts(self._client))()
+    with_raw_response = (lambda self = None: UploadsWithRawResponse(self))()
+    with_streaming_response = (lambda self = None: UploadsWithStreamingResponse(self))()
+    upload_file_chunked = (lambda self = None, *, file: pass)()
+    upload_file_chunked = (lambda self = None, *, file: pass)()
+    
+    def upload_file_chunked(self = None, *, file, mime_type, purpose, filename, bytes, part_size, md5):
+        '''Splits the given file into multiple parts and uploads them sequentially.
+
+        ```py
+        from pathlib import Path
+
+        client.uploads.upload_file(
+            file=Path("my-paper.pdf"),
+            mime_type="pdf",
+            purpose="assistants",
+        )
+        ```
+        '''
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    def create(self = None, *, bytes, filename, mime_type, purpose, expires_after, extra_headers, extra_query, extra_body, timeout):
+        '''
+        Creates an intermediate
+        [Upload](https://platform.openai.com/docs/api-reference/uploads/object) object
+        that you can add
+        [Parts](https://platform.openai.com/docs/api-reference/uploads/part-object) to.
+        Currently, an Upload can accept at most 8 GB in total and expires after an hour
+        after you create it.
+
+        Once you complete the Upload, we will create a
+        [File](https://platform.openai.com/docs/api-reference/files/object) object that
+        contains all the parts you uploaded. This File is usable in the rest of our
+        platform as a regular File object.
+
+        For certain `purpose` values, the correct `mime_type` must be specified. Please
+        refer to documentation for the
+        [supported MIME types for your use case](https://platform.openai.com/docs/assistants/tools/file-search#supported-files).
+
+        For guidance on the proper filename extensions for each purpose, please follow
+        the documentation on
+        [creating a File](https://platform.openai.com/docs/api-reference/files/create).
+
+        Args:
+          bytes: The number of bytes in the file you are uploading.
+
+          filename: The name of the file to upload.
+
+          mime_type: The MIME type of the file.
+
+              This must fall within the supported MIME types for your file purpose. See the
+              supported MIME types for assistants and vision.
+
+          purpose: The intended purpose of the uploaded file.
+
+              See the
+              [documentation on File purposes](https://platform.openai.com/docs/api-reference/files/create#files-create-purpose).
+
+          expires_after: The expiration policy for a file. By default, files with `purpose=batch` expire
+              after 30 days and all other files are persisted until they are manually deleted.
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        return self._post('/uploads', body = maybe_transform({
+            'bytes': bytes,
+            'filename': filename,
+            'mime_type': mime_type,
+            'purpose': purpose,
+            'expires_after': expires_after }, upload_create_params.UploadCreateParams), options = make_request_options(extra_headers = extra_headers, extra_query = extra_query, extra_body = extra_body, timeout = timeout), cast_to = Upload)
+
+    
+    def cancel(self = None, upload_id = None, *, extra_headers, extra_query, extra_body, timeout):
+        '''Cancels the Upload.
+
+        No Parts may be added after an Upload is cancelled.
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        if not upload_id:
+            raise ValueError(f'''Expected a non-empty value for `upload_id` but received {upload_id!r}''')
+        return self._post(f'''/uploads/{upload_id}/cancel''', options = make_request_options(extra_headers = extra_headers, extra_query = extra_query, extra_body = extra_body, timeout = timeout), cast_to = Upload)
+
+    
+    def complete(self = None, upload_id = None, *, part_ids, md5, extra_headers, extra_query, extra_body, timeout):
+        '''
+        Completes the
+        [Upload](https://platform.openai.com/docs/api-reference/uploads/object).
+
+        Within the returned Upload object, there is a nested
+        [File](https://platform.openai.com/docs/api-reference/files/object) object that
+        is ready to use in the rest of the platform.
+
+        You can specify the order of the Parts by passing in an ordered list of the Part
+        IDs.
+
+        The number of bytes uploaded upon completion must match the number of bytes
+        initially specified when creating the Upload object. No Parts may be added after
+        an Upload is completed.
+
+        Args:
+          part_ids: The ordered list of Part IDs.
+
+          md5: The optional md5 checksum for the file contents to verify if the bytes uploaded
+              matches what you expect.
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        if not upload_id:
+            raise ValueError(f'''Expected a non-empty value for `upload_id` but received {upload_id!r}''')
+        return self._post(f'''/uploads/{upload_id}/complete''', body = maybe_transform({
+            'part_ids': part_ids,
+            'md5': md5 }, upload_complete_params.UploadCompleteParams), options = make_request_options(extra_headers = extra_headers, extra_query = extra_query, extra_body = extra_body, timeout = timeout), cast_to = Upload)
+
+
+
+class AsyncUploads(AsyncAPIResource):
+    parts = (lambda self = None: AsyncParts(self._client))()
+    with_raw_response = (lambda self = None: AsyncUploadsWithRawResponse(self))()
+    with_streaming_response = (lambda self = None: AsyncUploadsWithStreamingResponse(self))()
+    upload_file_chunked = (lambda self = None, *, file: pass# WARNING: Decompyle incomplete
+)()
+    upload_file_chunked = (lambda self = None, *, file: pass# WARNING: Decompyle incomplete
+)()
+    
+    async def upload_file_chunked(self = None, *, file, mime_type, purpose, filename, bytes, part_size, md5):
+        '''Splits the given file into multiple parts and uploads them sequentially.
+
+        ```py
+        from pathlib import Path
+
+        client.uploads.upload_file(
+            file=Path("my-paper.pdf"),
+            mime_type="pdf",
+            purpose="assistants",
+        )
+        ```
+        '''
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    async def create(self = None, *, bytes, filename, mime_type, purpose, expires_after, extra_headers, extra_query, extra_body, timeout):
+        '''
+        Creates an intermediate
+        [Upload](https://platform.openai.com/docs/api-reference/uploads/object) object
+        that you can add
+        [Parts](https://platform.openai.com/docs/api-reference/uploads/part-object) to.
+        Currently, an Upload can accept at most 8 GB in total and expires after an hour
+        after you create it.
+
+        Once you complete the Upload, we will create a
+        [File](https://platform.openai.com/docs/api-reference/files/object) object that
+        contains all the parts you uploaded. This File is usable in the rest of our
+        platform as a regular File object.
+
+        For certain `purpose` values, the correct `mime_type` must be specified. Please
+        refer to documentation for the
+        [supported MIME types for your use case](https://platform.openai.com/docs/assistants/tools/file-search#supported-files).
+
+        For guidance on the proper filename extensions for each purpose, please follow
+        the documentation on
+        [creating a File](https://platform.openai.com/docs/api-reference/files/create).
+
+        Args:
+          bytes: The number of bytes in the file you are uploading.
+
+          filename: The name of the file to upload.
+
+          mime_type: The MIME type of the file.
+
+              This must fall within the supported MIME types for your file purpose. See the
+              supported MIME types for assistants and vision.
+
+          purpose: The intended purpose of the uploaded file.
+
+              See the
+              [documentation on File purposes](https://platform.openai.com/docs/api-reference/files/create#files-create-purpose).
+
+          expires_after: The expiration policy for a file. By default, files with `purpose=batch` expire
+              after 30 days and all other files are persisted until they are manually deleted.
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    async def cancel(self = None, upload_id = None, *, extra_headers, extra_query, extra_body, timeout):
+        '''Cancels the Upload.
+
+        No Parts may be added after an Upload is cancelled.
+
+        Args:
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    async def complete(self = None, upload_id = None, *, part_ids, md5, extra_headers, extra_query, extra_body, timeout):
+        '''
+        Completes the
+        [Upload](https://platform.openai.com/docs/api-reference/uploads/object).
+
+        Within the returned Upload object, there is a nested
+        [File](https://platform.openai.com/docs/api-reference/files/object) object that
+        is ready to use in the rest of the platform.
+
+        You can specify the order of the Parts by passing in an ordered list of the Part
+        IDs.
+
+        The number of bytes uploaded upon completion must match the number of bytes
+        initially specified when creating the Upload object. No Parts may be added after
+        an Upload is completed.
+
+        Args:
+          part_ids: The ordered list of Part IDs.
+
+          md5: The optional md5 checksum for the file contents to verify if the bytes uploaded
+              matches what you expect.
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        '''
+        pass
+    # WARNING: Decompyle incomplete
+
+
+
+class UploadsWithRawResponse:
+    
+    def __init__(self = None, uploads = None):
+        self._uploads = uploads
+        self.create = _legacy_response.to_raw_response_wrapper(uploads.create)
+        self.cancel = _legacy_response.to_raw_response_wrapper(uploads.cancel)
+        self.complete = _legacy_response.to_raw_response_wrapper(uploads.complete)
+
+    parts = (lambda self = None: PartsWithRawResponse(self._uploads.parts))()
+
+
+class AsyncUploadsWithRawResponse:
+    
+    def __init__(self = None, uploads = None):
+        self._uploads = uploads
+        self.create = _legacy_response.async_to_raw_response_wrapper(uploads.create)
+        self.cancel = _legacy_response.async_to_raw_response_wrapper(uploads.cancel)
+        self.complete = _legacy_response.async_to_raw_response_wrapper(uploads.complete)
+
+    parts = (lambda self = None: AsyncPartsWithRawResponse(self._uploads.parts))()
+
+
+class UploadsWithStreamingResponse:
+    
+    def __init__(self = None, uploads = None):
+        self._uploads = uploads
+        self.create = to_streamed_response_wrapper(uploads.create)
+        self.cancel = to_streamed_response_wrapper(uploads.cancel)
+        self.complete = to_streamed_response_wrapper(uploads.complete)
+
+    parts = (lambda self = None: PartsWithStreamingResponse(self._uploads.parts))()
+
+
+class AsyncUploadsWithStreamingResponse:
+    
+    def __init__(self = None, uploads = None):
+        self._uploads = uploads
+        self.create = async_to_streamed_response_wrapper(uploads.create)
+        self.cancel = async_to_streamed_response_wrapper(uploads.cancel)
+        self.complete = async_to_streamed_response_wrapper(uploads.complete)
+
+    parts = (lambda self = None: AsyncPartsWithStreamingResponse(self._uploads.parts))()

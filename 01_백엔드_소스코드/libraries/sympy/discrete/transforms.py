@@ -1,0 +1,257 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: transforms.pyc (Python 3.11)
+
+'''
+Discrete Fourier Transform, Number Theoretic Transform,
+Walsh Hadamard Transform, Mobius Transform
+'''
+from sympy.core import S, Symbol, sympify
+from sympy.core.function import expand_mul
+from sympy.core.numbers import pi, I
+from sympy.functions.elementary.trigonometric import sin, cos
+from sympy.ntheory import isprime, primitive_root
+from sympy.utilities.iterables import ibin, iterable
+from sympy.utilities.misc import as_int
+
+def _fourier_transform(seq, dps, inverse = (False,)):
+    '''Utility function for the Discrete Fourier Transform'''
+    pass
+# WARNING: Decompyle incomplete
+
+
+def fft(seq, dps = (None,)):
+    '''
+    Performs the Discrete Fourier Transform (**DFT**) in the complex domain.
+
+    The sequence is automatically padded to the right with zeros, as the
+    *radix-2 FFT* requires the number of sample points to be a power of 2.
+
+    This method should be used with default arguments only for short sequences
+    as the complexity of expressions increases with the size of the sequence.
+
+    Parameters
+    ==========
+
+    seq : iterable
+        The sequence on which **DFT** is to be applied.
+    dps : Integer
+        Specifies the number of decimal digits for precision.
+
+    Examples
+    ========
+
+    >>> from sympy import fft, ifft
+
+    >>> fft([1, 2, 3, 4])
+    [10, -2 - 2*I, -2, -2 + 2*I]
+    >>> ifft(_)
+    [1, 2, 3, 4]
+
+    >>> ifft([1, 2, 3, 4])
+    [5/2, -1/2 + I/2, -1/2, -1/2 - I/2]
+    >>> fft(_)
+    [1, 2, 3, 4]
+
+    >>> ifft([1, 7, 3, 4], dps=15)
+    [3.75, -0.5 - 0.75*I, -1.75, -0.5 + 0.75*I]
+    >>> fft(_)
+    [1.0, 7.0, 3.0, 4.0]
+
+    References
+    ==========
+
+    .. [1] https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm
+    .. [2] https://mathworld.wolfram.com/FastFourierTransform.html
+
+    '''
+    return _fourier_transform(seq, dps = dps)
+
+
+def ifft(seq, dps = (None,)):
+    return _fourier_transform(seq, dps = dps, inverse = True)
+
+ifft.__doc__ = fft.__doc__
+
+def _number_theoretic_transform(seq, prime, inverse = (False,)):
+    '''Utility function for the Number Theoretic Transform'''
+    pass
+# WARNING: Decompyle incomplete
+
+
+def ntt(seq, prime):
+    '''
+    Performs the Number Theoretic Transform (**NTT**), which specializes the
+    Discrete Fourier Transform (**DFT**) over quotient ring `Z/pZ` for prime
+    `p` instead of complex numbers `C`.
+
+    The sequence is automatically padded to the right with zeros, as the
+    *radix-2 NTT* requires the number of sample points to be a power of 2.
+
+    Parameters
+    ==========
+
+    seq : iterable
+        The sequence on which **DFT** is to be applied.
+    prime : Integer
+        Prime modulus of the form `(m 2^k + 1)` to be used for performing
+        **NTT** on the sequence.
+
+    Examples
+    ========
+
+    >>> from sympy import ntt, intt
+    >>> ntt([1, 2, 3, 4], prime=3*2**8 + 1)
+    [10, 643, 767, 122]
+    >>> intt(_, 3*2**8 + 1)
+    [1, 2, 3, 4]
+    >>> intt([1, 2, 3, 4], prime=3*2**8 + 1)
+    [387, 415, 384, 353]
+    >>> ntt(_, prime=3*2**8 + 1)
+    [1, 2, 3, 4]
+
+    References
+    ==========
+
+    .. [1] http://www.apfloat.org/ntt.html
+    .. [2] https://mathworld.wolfram.com/NumberTheoreticTransform.html
+    .. [3] https://en.wikipedia.org/wiki/Discrete_Fourier_transform_(general%29
+
+    '''
+    return _number_theoretic_transform(seq, prime = prime)
+
+
+def intt(seq, prime):
+    return _number_theoretic_transform(seq, prime = prime, inverse = True)
+
+intt.__doc__ = ntt.__doc__
+
+def _walsh_hadamard_transform(seq, inverse = (False,)):
+    '''Utility function for the Walsh Hadamard Transform'''
+    pass
+# WARNING: Decompyle incomplete
+
+
+def fwht(seq):
+    '''
+    Performs the Walsh Hadamard Transform (**WHT**), and uses Hadamard
+    ordering for the sequence.
+
+    The sequence is automatically padded to the right with zeros, as the
+    *radix-2 FWHT* requires the number of sample points to be a power of 2.
+
+    Parameters
+    ==========
+
+    seq : iterable
+        The sequence on which WHT is to be applied.
+
+    Examples
+    ========
+
+    >>> from sympy import fwht, ifwht
+    >>> fwht([4, 2, 2, 0, 0, 2, -2, 0])
+    [8, 0, 8, 0, 8, 8, 0, 0]
+    >>> ifwht(_)
+    [4, 2, 2, 0, 0, 2, -2, 0]
+
+    >>> ifwht([19, -1, 11, -9, -7, 13, -15, 5])
+    [2, 0, 4, 0, 3, 10, 0, 0]
+    >>> fwht(_)
+    [19, -1, 11, -9, -7, 13, -15, 5]
+
+    References
+    ==========
+
+    .. [1] https://en.wikipedia.org/wiki/Hadamard_transform
+    .. [2] https://en.wikipedia.org/wiki/Fast_Walsh%E2%80%93Hadamard_transform
+
+    '''
+    return _walsh_hadamard_transform(seq)
+
+
+def ifwht(seq):
+    return _walsh_hadamard_transform(seq, inverse = True)
+
+ifwht.__doc__ = fwht.__doc__
+
+def _mobius_transform(seq, sgn, subset):
+    """Utility function for performing Mobius Transform using
+    Yate's Dynamic Programming method"""
+    if not iterable(seq):
+        raise TypeError('Expected a sequence of coefficients')
+    a = seq()
+    n = len(a)
+    if n < 2:
+        return a
+    if (lambda .0: [ sympify(arg) for arg in .0 ]) & n - 1:
+        n = 2 ** n.bit_length()
+    a += [
+        S.Zero] * (n - len(a))
+# WARNING: Decompyle incomplete
+
+
+def mobius_transform(seq, subset = (True,)):
+    """
+    Performs the Mobius Transform for subset lattice with indices of
+    sequence as bitmasks.
+
+    The indices of each argument, considered as bit strings, correspond
+    to subsets of a finite set.
+
+    The sequence is automatically padded to the right with zeros, as the
+    definition of subset/superset based on bitmasks (indices) requires
+    the size of sequence to be a power of 2.
+
+    Parameters
+    ==========
+
+    seq : iterable
+        The sequence on which Mobius Transform is to be applied.
+    subset : bool
+        Specifies if Mobius Transform is applied by enumerating subsets
+        or supersets of the given set.
+
+    Examples
+    ========
+
+    >>> from sympy import symbols
+    >>> from sympy import mobius_transform, inverse_mobius_transform
+    >>> x, y, z = symbols('x y z')
+
+    >>> mobius_transform([x, y, z])
+    [x, x + y, x + z, x + y + z]
+    >>> inverse_mobius_transform(_)
+    [x, y, z, 0]
+
+    >>> mobius_transform([x, y, z], subset=False)
+    [x + y + z, y, z, 0]
+    >>> inverse_mobius_transform(_, subset=False)
+    [x, y, z, 0]
+
+    >>> mobius_transform([1, 2, 3, 4])
+    [1, 3, 4, 10]
+    >>> inverse_mobius_transform(_)
+    [1, 2, 3, 4]
+    >>> mobius_transform([1, 2, 3, 4], subset=False)
+    [10, 6, 7, 4]
+    >>> inverse_mobius_transform(_, subset=False)
+    [1, 2, 3, 4]
+
+    References
+    ==========
+
+    .. [1] https://en.wikipedia.org/wiki/M%C3%B6bius_inversion_formula
+    .. [2] https://people.csail.mit.edu/rrw/presentations/subset-conv.pdf
+    .. [3] https://arxiv.org/pdf/1211.0189.pdf
+
+    """
+    return _mobius_transform(seq, sgn = 1, subset = subset)
+
+
+def inverse_mobius_transform(seq, subset = (True,)):
+    return _mobius_transform(seq, sgn = -1, subset = subset)
+
+inverse_mobius_transform.__doc__ = mobius_transform.__doc__

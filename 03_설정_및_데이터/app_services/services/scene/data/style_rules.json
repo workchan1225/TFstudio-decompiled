@@ -1,0 +1,185 @@
+{
+  "_version": "1.7.6",
+  "_description": "Style emphasis keywords for image generation - Single Source of Truth",
+  "style_emphasis_keywords": {
+    "animation": {
+      "prefix": "[STYLE: ANIME/ANIMATION ART]",
+      "keywords": "Japanese 2D animation style, cel-shading, vivid bright colors, animation aesthetic, clean linework, well-lit scene, bright cheerful lighting, soft ambient light, consistent character design, same facial features throughout",
+      "anti_keywords": "NEVER include photorealistic elements, real photos, 3D renders, CGI effects, cinematic lighting, lens flare, bokeh, depth of field, volumetric lighting. NEVER change character face between scenes. Avoid dark shadows, dim lighting, gloomy atmosphere. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Japanese 2D animation style artwork with consistent character appearances, NOT a photograph or realistic image."
+    },
+    "animation_sageuk": {
+      "prefix": "[STYLE: KOREAN HISTORICAL COMEDY WEBTOON - WARM MUTED TONES]",
+      "keywords": "Korean sageuk-inspired comedy webtoon style, warm muted color palette, beige cream soft gray warm brown tones, soft cel-shading with gentle gradients, expressive comedic facial acting, warm ambient lighting mood, clean linework, consistent character design",
+      "anti_keywords": "NEVER include vivid over-saturated neon colors, dark horror atmosphere, realistic photograph, 3D render. Avoid cold blue-heavy grading, harsh contrast, and hyper-dramatic cinematic lighting. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean sageuk-inspired comedy webtoon rendering with warm muted tones."
+    },
+    "animation_folktale": {
+      "prefix": "[STYLE: WARM PAINTERLY KOREAN ILLUSTRATION - EARTH TONE AESTHETIC]",
+      "keywords": "warm painterly Korean illustration style, warm earth tones, ochre sienna soft greens natural browns, textured brush strokes, soft cel-shading, nostalgic storytelling mood, semi-realistic rendering, traditional media-inspired illustration aesthetic, consistent character design",
+      "anti_keywords": "NEVER include vivid neon colors, cyberpunk glow, cold desaturated palette, dark horror atmosphere, realistic photograph, 3D render. Avoid high saturation, over-sharpened CGI look, and harsh modern VFX lighting. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be warm painterly Korean illustration style with consistent character rendering."
+    },
+    "animation_rural": {
+      "prefix": "[STYLE: KOREAN HISTORICAL RURAL WEBTOON - BRIGHT CHEERFUL OUTDOOR]",
+      "keywords": "Korean rural-inspired webtoon rendering style, bright cheerful color grading, warm earth tones with fresh green-blue accents, bright natural daylight mood, clean cel-shading, heartwarming optimistic atmosphere, approachable expressive faces, consistent character design",
+      "anti_keywords": "NEVER include dark gloomy atmosphere, heavy cold desaturated grading, realistic photograph, 3D render. Avoid harsh dramatic shadows and thriller/horror mood. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean rural-inspired webtoon rendering with bright cheerful mood."
+    },
+    "animation_murim": {
+      "prefix": "[STYLE: KOREAN MURIM/WUXIA WEBTOON - DYNAMIC MARTIAL ARTS ACTION]",
+      "keywords": "Korean murim wuxia webtoon style, dynamic martial arts action, flowing qi energy effects, dramatic sword fighting, powerful battle poses, traditional martial arts robes, ancient Chinese Korean fantasy setting, mountain temple bamboo forest backgrounds, intense dramatic expressions, speed lines impact effects, high contrast dramatic lighting, consistent character design",
+      "anti_keywords": "NEVER include modern setting, cute chibi style, slice-of-life calm scenes, pastel soft colors, realistic photograph, 3D render. Avoid static poses, peaceful atmosphere. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean murim webtoon style with dynamic martial arts action and dramatic energy effects."
+    },
+    "animation_romance": {
+      "prefix": "[STYLE: KOREAN ROMANCE WEBTOON - SOFT DREAMY AESTHETIC]",
+      "keywords": "Korean romance webtoon style, soft dreamy aesthetic, pastel pink lavender tones, gentle gradient backgrounds, sparkling effects, emotional intimate moments, beautiful character designs, soft lighting bloom effects, romantic atmosphere, delicate expressions, fashionable modern clothing, consistent character design",
+      "anti_keywords": "NEVER include action violence, dark gritty atmosphere, horror elements, harsh shadows, desaturated colors, realistic photograph, 3D render. Avoid intense dramatic lighting, scary expressions. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean romance webtoon style with soft dreamy romantic atmosphere."
+    },
+    "animation_horror": {
+      "prefix": "[STYLE: KOREAN THRILLER/HORROR WEBTOON - DARK SUSPENSEFUL ATMOSPHERE]",
+      "keywords": "Korean thriller horror webtoon style, dark suspenseful atmosphere, muted desaturated colors, heavy shadows, high contrast lighting, eerie unsettling mood, tense expressions, psychological horror aesthetic, ominous backgrounds, cold color palette blue gray black, dramatic chiaroscuro, consistent character design",
+      "anti_keywords": "NEVER include bright cheerful colors, cute style, romantic soft lighting, warm tones, happy expressions, realistic photograph, 3D render. Avoid pastel colors, cozy atmosphere. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean horror webtoon style with dark suspenseful thriller atmosphere."
+    },
+    "animation_cyberpunk": {
+      "prefix": "[STYLE: CYBERPUNK ANIME - NEON FUTURISTIC AESTHETIC]",
+      "keywords": "cyberpunk anime style, neon futuristic aesthetic, vibrant neon colors pink cyan purple, dark urban cityscape, holographic effects, high-tech sci-fi elements, futuristic clothing cybernetic augments, dramatic neon lighting, rain-slicked streets, towering skyscrapers, digital glitch effects, consistent character design",
+      "anti_keywords": "NEVER include historical setting, traditional clothing, natural environments, warm earth tones, pastoral scenes, realistic photograph, 3D render. Avoid daylight scenes, rural backgrounds. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be cyberpunk anime style with neon futuristic urban aesthetic."
+    },
+    "animation_slice_of_life": {
+      "prefix": "[STYLE: KOREAN SLICE-OF-LIFE WEBTOON - WARM CHEERFUL EVERYDAY]",
+      "keywords": "Korean slice-of-life webtoon style, warm cheerful everyday scenes, bright friendly colors, soft cel-shading, expressive comedic reactions, relatable daily life situations, cozy indoor outdoor settings, warm natural lighting, approachable character designs, lighthearted humorous atmosphere, consistent character design",
+      "anti_keywords": "NEVER include dark atmosphere, horror violence, dramatic action, intense conflicts, cold desaturated colors, realistic photograph, 3D render. Avoid serious dramatic tone, scary elements. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean slice-of-life webtoon style with warm cheerful everyday atmosphere."
+    },
+    "animation_webtoon": {
+      "prefix": "[STYLE: KOREAN DIGITAL WEBTOON - CLEAN MODERN MANHWA]",
+      "keywords": "Korean digital webtoon style, clean modern manhwa aesthetic, smooth cel-shading, vibrant appealing colors, detailed character designs, expressive faces, contemporary fashion, urban modern settings, professional webtoon quality, dynamic compositions, consistent character design",
+      "anti_keywords": "NEVER include Japanese manga screentones, Western comic style, rough sketchy lines, traditional painting style, realistic photograph, 3D render. Avoid outdated art style, low quality rendering. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be Korean digital webtoon style with clean modern professional quality."
+    },
+    "illustration": {
+      "prefix": "[STYLE: DIGITAL ILLUSTRATION]",
+      "keywords": "digital illustration, artistic rendering, painted look, stylized art, dynamic storytelling composition, varied camera viewpoints, three-quarter view, profile view, narrative pose variation, consistent character design, same facial features throughout",
+      "anti_keywords": "NEVER include photorealistic style, real photos, 3D renders, CGI effects, cinematic lighting, lens flare, bokeh, depth of field. NEVER change character face between scenes. Avoid repetitive straight-on front-facing portrait composition. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be digital illustration style artwork with consistent character appearances, NOT a photograph or realistic image."
+    },
+    "illustration_concept_art": {
+      "prefix": "[STYLE: CONCEPT ART ILLUSTRATION - CINEMATIC PRODUCTION DESIGN]",
+      "keywords": "concept art illustration style, cinematic production design, environment design, character design sheet, matte painting aesthetic, dramatic mood lighting, epic scale compositions, fantasy sci-fi worlds, professional entertainment industry quality, painterly digital rendering, consistent character design",
+      "anti_keywords": "NEVER include anime cartoon style, simple flat colors, childish cute style, photorealistic photograph, 3D render. Avoid sketch rough quality or amateur look. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be professional concept art illustration with cinematic production design quality."
+    },
+    "illustration_book_cover": {
+      "prefix": "[STYLE: BOOK COVER ILLUSTRATION - DRAMATIC LITERARY ART]",
+      "keywords": "book cover illustration style, dramatic literary artwork, symbolic visual storytelling, rich color palette, evocative mood atmosphere, professional publishing quality, title space composition, genre-appropriate aesthetics, compelling focal point, painterly digital art, consistent character design",
+      "anti_keywords": "NEVER include anime cartoon style, simple childish art, photorealistic photograph, cluttered busy composition, text typography. Avoid amateur quality or generic stock art look. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be professional book cover illustration with dramatic literary appeal."
+    },
+    "illustration_cute": {
+      "prefix": "[STYLE: CUTE CHARACTER ILLUSTRATION - ADORABLE KAWAII AESTHETIC]",
+      "keywords": "cute character illustration style, adorable kawaii aesthetic, chibi rounded proportions, big expressive eyes, pastel soft colors, friendly approachable designs, plush toy appeal, cheerful happy expressions, simple clean shapes, heartwarming wholesome mood, consistent character design",
+      "anti_keywords": "NEVER include realistic proportions, dark scary atmosphere, horror elements, mature adult themes, photorealistic style, complex detailed rendering. Avoid edgy cool style or serious dramatic tone. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be cute character illustration with adorable kawaii appeal."
+    },
+    "illustration_webtoon": {
+      "prefix": "[STYLE: WEBTOON ILLUSTRATION - KOREAN DIGITAL COMIC ART]",
+      "keywords": "webtoon illustration style, Korean digital comic art, clean precise linework, smooth cel-shading gradients, expressive character faces, vibrant appealing colors, vertical scroll optimized, professional manhwa quality, emotional storytelling, modern contemporary aesthetic, consistent character design",
+      "anti_keywords": "NEVER include rough sketchy lines, Japanese manga screentones, Western comic style, photorealistic photograph, traditional painting style. Avoid amateur quality or inconsistent art style. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. NEVER include character name labels, name tags, character names as text, identifying text overlays, or any written names in the image. This MUST be professional webtoon illustration with clean modern Korean comic aesthetic."
+    },
+    "realistic": {
+      "prefix": "[STYLE: PHOTOREALISTIC]",
+      "keywords": "photorealistic photograph, cinematic still, real photography, 8K photo, high-quality",
+      "anti_keywords": "NEVER include anime, cartoon, illustration, 3D render, or CGI elements"
+    },
+    "realistic_epic_fantasy": {
+      "prefix": "[STYLE: PHOTOREALISTIC EPIC FANTASY - CINEMATIC HIGH FANTASY]",
+      "keywords": "photorealistic epic fantasy, high-budget fantasy film aesthetic, cinematic fantasy battles, magical creatures dragons, elaborate medieval armor costumes, mystical landscapes castles, dramatic volumetric lighting, Hollywood VFX quality, Lord of the Rings Hobbit aesthetic, 8K cinematic still",
+      "anti_keywords": "NEVER include anime cartoon style, low budget B-movie look, video game graphics, cheap CGI effects, simple flat lighting. Avoid fantasy illustrations or painted look. This MUST be photorealistic epic fantasy with Hollywood blockbuster quality."
+    },
+    "realistic_space_scifi": {
+      "prefix": "[STYLE: PHOTOREALISTIC SPACE SCI-FI - CINEMATIC SCIENCE FICTION]",
+      "keywords": "photorealistic space sci-fi, cutting-edge VFX quality, cinematic space opera, futuristic spacecraft interiors, advanced technology props, astronaut spacesuits, alien planets cosmic environments, dramatic rim lighting lens flares, Interstellar Dune Blade Runner aesthetic, 8K cinematic still",
+      "anti_keywords": "NEVER include anime cartoon style, retro cheap sci-fi, video game graphics, fantasy medieval elements, low budget effects. Avoid sci-fi illustrations or painted look. This MUST be photorealistic space sci-fi with modern Hollywood quality."
+    },
+    "traditional": {
+      "prefix": "[STYLE: TRADITIONAL KOREAN ART]",
+      "keywords": "traditional Korean painting style, minhwa folk art aesthetic, painterly brushwork, narrative scene composition, varied figure orientation, three-quarter view, profile view, ink wash texture, traditional color palette, flat perspective",
+      "anti_keywords": "NEVER include modern style, photorealistic, photograph, 3D render, CGI, 8k, 4k, hyper-detailed, cinematic lighting, lens flare, bokeh, depth of field, motion blur, volumetric lighting. Avoid rigid front-facing-only portrait composition. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. This MUST be traditional East Asian painting style artwork, NOT a photograph or realistic image."
+    },
+    "traditional_minhwa": {
+      "prefix": "[STYLE: KOREAN MINHWA FOLK PAINTING - VIBRANT DECORATIVE]",
+      "keywords": "Korean minhwa folk painting style, vibrant bold primary colors, decorative symbolic imagery, tigers magpies peonies, auspicious motifs, flat perspective no shadows, thick black outlines, folk art naive charm, traditional mineral pigments, happiness longevity symbols, consistent character design",
+      "anti_keywords": "NEVER include realistic shading, Western perspective, modern elements, photorealistic style, 3D render, muted colors, subtle gradients. Avoid ink wash monochrome style. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. This MUST be vibrant Korean minhwa folk painting with bold decorative colors."
+    },
+    "traditional_ink_wash": {
+      "prefix": "[STYLE: EAST ASIAN INK WASH PAINTING - MONOCHROME ELEGANCE]",
+      "keywords": "East Asian ink wash painting style, sumi-e suibokuga aesthetic, monochrome black ink gradations, elegant brushwork, negative space emptiness, misty mountains bamboo, scholarly literati painting, wet ink bleeding effects, minimalist composition, Zen Buddhist aesthetic, contemplative mood",
+      "anti_keywords": "NEVER include vibrant colors, Western painting style, photorealistic, modern elements, detailed backgrounds, heavy outlines. Avoid colorful minhwa style or digital art look. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. This MUST be traditional monochrome ink wash painting with elegant simplicity."
+    },
+    "traditional_folktale": {
+      "prefix": "[STYLE: JOSEON FOLKTALE ILLUSTRATION - NARRATIVE STORYTELLING]",
+      "keywords": "Joseon folktale-inspired illustration rendering, warm earth-tone colors, narrative storytelling composition, expressive gestures and facial acting, scroll-painting-inspired brush rhythm, traditional media texture, balanced decorative detailing, consistent character design",
+      "anti_keywords": "NEVER include photorealistic style, Western oil-painting realism, 3D render, dark horror atmosphere. Avoid pure monochrome ink wash and overly decorative minhwa ornament overload. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. This MUST be Joseon folktale-inspired illustration rendering with warm narrative storytelling mood."
+    },
+    "informational": {
+      "prefix": "[STYLE: SIMPLE STICKMAN/WEBTOON CHARACTER with 2D ILLUSTRATED BACKGROUND]",
+      "keywords": "simple stickman character, white round face with black outline, dot eyes, minimalist illustrated style, stick figure body, flat colored clothing, detailed 2D illustrated background, webtoon aesthetic, Cyanide and Happiness style",
+      "anti_keywords": "Do not include photorealistic elements, real person, photograph, 3D render, detailed face, realistic skin, realistic eyes, or detailed eyes. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, or any text elements"
+    },
+    "informational_stickman": {
+      "prefix": "[STYLE: SIMPLE STICKMAN/WEBTOON CHARACTER with 2D ILLUSTRATED BACKGROUND]",
+      "keywords": "simple stickman character, white round face with black outline, dot eyes, minimalist illustrated style, stick figure body, flat colored clothing, detailed 2D illustrated background, webtoon aesthetic, Cyanide and Happiness style",
+      "anti_keywords": "Do not include photorealistic elements, real person, photograph, 3D render, detailed face, realistic skin, realistic eyes, or detailed eyes. NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, or any text elements"
+    },
+    "informational_flat": {
+      "prefix": "[STYLE: FLAT DESIGN GEOMETRIC CHARACTER with FLAT DESIGN BACKGROUND]",
+      "keywords": "flat design character, geometric shapes, circle head, rectangle body, solid flat colors, no gradients, minimal outlines, dot eyes, Material Design style, Corporate Memphis style, clean modern aesthetic, simple shapes, bold colors",
+      "anti_keywords": "Avoid photorealistic, 3D render, gradients, shadows, realistic textures, complex details, organic shapes, or realistic anatomy. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_lineart": {
+      "prefix": "[STYLE: LINE ART CHARACTER with MINIMALIST BACKGROUND]",
+      "keywords": "line art character, single line drawing, continuous line style, black lines only, no fill colors, consistent line weight, elegant linework, minimal detail, white background, negative space, gallery-quality clean composition, pen drawing",
+      "anti_keywords": "Avoid photorealistic, colorful, filled colors, gradients, 3D render, complex shading, busy background, or detailed textures. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_silhouette": {
+      "prefix": "[STYLE: PURE BLACK SILHOUETTE CHARACTER - COMPLETELY SOLID BLACK with GRADIENT BACKGROUND]",
+      "keywords": "solid pure black silhouette character, 100% black filled shape, completely opaque black figure, emotions conveyed ONLY through body pose and gesture, dramatic colorful gradient background, sunset orange pink purple gradient, strong contrast between black figure and colorful sky",
+      "anti_keywords": "NEVER include face visible, eyes visible, facial features, nose, mouth, face details, gray silhouette, semi-transparent, translucent, internal shading, internal details, highlights on figure, any detail inside silhouette, 3D render, skin visible, or clothing details visible. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_pixel": {
+      "prefix": "[STYLE: PIXEL ART CHARACTER with PIXEL ART BACKGROUND]",
+      "keywords": "8-bit pixel art character, 16-bit pixel art, blocky pixel design, visible individual pixels, limited color palette, retro game aesthetic, NES SNES arcade style, chunky pixels, no anti-aliasing, video game character",
+      "anti_keywords": "Avoid photorealistic, smooth gradients, high resolution details, anti-aliased edges, modern graphics, smooth curves, or realistic elements. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_doodle": {
+      "prefix": "[STYLE: HAND-DRAWN DOODLE CHARACTER with WHITEBOARD/PAPER BACKGROUND]",
+      "keywords": "hand-drawn doodle character, sketchy irregular lines, casual scribble style, marker pen pencil strokes, intentionally rough lines, whiteboard background, notebook paper texture, quick sketch energy, wobbly lines",
+      "anti_keywords": "Avoid photorealistic, polished illustration, 3D render, perfect lines, smooth curves, professional digital art, or clean lines. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_isometric": {
+      "prefix": "[STYLE: ISOMETRIC 3D-STYLE CHARACTER with ISOMETRIC ENVIRONMENT]",
+      "keywords": "isometric character design, 30-degree angle view, pseudo-3D flat style, geometric proportions, clean vector look, isometric perspective, no vanishing point, parallel projection, game asset style, clean edges, solid colors",
+      "anti_keywords": "Avoid photorealistic, real perspective, vanishing point, organic curves, realistic shadows, photograph, true 3D render, or complex shading. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_papercut": {
+      "prefix": "[STYLE: PAPER CUTOUT COLLAGE CHARACTER with LAYERED PAPER BACKGROUND]",
+      "keywords": "paper cutout character, collage style, layered paper shapes, construction paper texture, scissor-cut edges, craft paper aesthetic, torn paper edges, paper layers with shadows, colorful paper pieces, handmade craft look",
+      "anti_keywords": "Avoid photorealistic, digital smooth, 3D render, gradient colors, realistic textures, photograph, or clean vector lines. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_chalkboard": {
+      "prefix": "[STYLE: CHALKBOARD DRAWING CHARACTER with BLACKBOARD BACKGROUND]",
+      "keywords": "chalk drawing character, white chalk on blackboard, sketchy chalk lines, chalk dust texture, hand-drawn chalk style, blackboard background, educational chalkboard aesthetic, simple chalk figures, pastel chalk colors optional",
+      "anti_keywords": "Avoid photorealistic, digital clean, 3D render, smooth gradients, bright colors, photograph, or polished illustration. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "informational_watercolor": {
+      "prefix": "[STYLE: WATERCOLOR PAINTED CHARACTER with WATERCOLOR WASH BACKGROUND]",
+      "keywords": "watercolor character, soft watercolor painting, wet-on-wet technique, color bleeding, soft edges, transparent washes, artistic watercolor style, gentle color gradients, paper texture visible, loose brushstrokes",
+      "anti_keywords": "Avoid photorealistic, digital clean, 3D render, hard edges, solid flat colors, photograph, vector art, or sharp lines. NEVER include speech bubbles, dialogue boxes, text bubbles, or any text elements"
+    },
+    "custom": {
+      "prefix": "[Custom Art Style]",
+      "keywords": "",
+      "anti_keywords": "NEVER include speech bubbles, dialogue boxes, text bubbles, comic panels, word balloons, caption boxes, or any text/letter elements in the image. Maintain consistent character appearance throughout."
+    }
+  },
+  "safe_style_prefixes": {
+    "animation": "[STYLE: CONSISTENT 2D WEBTOON RENDERING]",
+    "illustration": "[STYLE: CONSISTENT DIGITAL ILLUSTRATION RENDERING]",
+    "realistic": "[STYLE: CONSISTENT PHOTOREALISTIC RENDERING]",
+    "traditional": "[STYLE: CONSISTENT TRADITIONAL PAINTERLY RENDERING]",
+    "informational": "[STYLE: CONSISTENT INFORMATIONAL CHARACTER RENDERING]",
+    "custom": "[STYLE: CONSISTENT CUSTOM ART RENDERING]"
+  },
+  "hairstyle_consistency_negative": "Do not change hairstyle, hair length, hair color, or hair styling. MUST maintain original hairstyle throughout. Avoid different hair accessories or missing hair pins."
+}

@@ -1,0 +1,13 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: pyi_rth_pkgres.pyc (Python 3.11)
+
+
+def _pyi_rthook():
+    pass
+# WARNING: Decompyle incomplete
+
+_pyi_rthook()
+del _pyi_rthook

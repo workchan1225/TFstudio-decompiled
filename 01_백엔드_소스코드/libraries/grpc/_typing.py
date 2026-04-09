@@ -1,0 +1,66 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: _typing.pyc (Python 3.11)
+
+'''Common types for gRPC Sync API'''
+from typing import TYPE_CHECKING, Any, Callable, Iterable, Iterator, Optional, Sequence, Tuple, TypeVar, Union
+from grpc._cython import cygrpc
+if TYPE_CHECKING:
+    from grpc import ServicerContext
+    from grpc._server import _RPCState
+RequestType = TypeVar('RequestType')
+ResponseType = TypeVar('ResponseType')
+SerializingFunction = Callable[([
+    Any], bytes)]
+DeserializingFunction = Callable[([
+    bytes], Any)]
+MetadataType = Sequence[Tuple[(str, Union[(str, bytes)])]]
+ChannelArgumentType = Tuple[(str, Any)]
+DoneCallbackType = Callable[([
+    Any], None)]
+NullaryCallbackType = Callable[([], None)]
+RequestIterableType = Iterable[Any]
+ResponseIterableType = Iterable[Any]
+UserTag = Callable[([
+    cygrpc.BaseEvent], bool)]
+IntegratedCallFactory = Callable[([
+    int,
+    bytes,
+    Optional[str],
+    Optional[float],
+    Optional[MetadataType],
+    Optional[cygrpc.CallCredentials],
+    Sequence[Sequence[cygrpc.Operation]],
+    UserTag,
+    Any,
+    Optional[int]], cygrpc.IntegratedCall)]
+ServerTagCallbackType = Tuple[(Optional['_RPCState'], Sequence[NullaryCallbackType])]
+ServerCallbackTag = Callable[([
+    cygrpc.BaseEvent], ServerTagCallbackType)]
+ArityAgnosticMethodHandler = Union[(Callable[([
+    RequestType,
+    'ServicerContext',
+    Callable[([
+        ResponseType], None)]], ResponseType)], Callable[([
+    RequestType,
+    'ServicerContext',
+    Callable[([
+        ResponseType], None)]], Iterator[ResponseType])], Callable[([
+    Iterator[RequestType],
+    'ServicerContext',
+    Callable[([
+        ResponseType], None)]], ResponseType)], Callable[([
+    Iterator[RequestType],
+    'ServicerContext',
+    Callable[([
+        ResponseType], None)]], Iterator[ResponseType])], Callable[([
+    RequestType,
+    'ServicerContext'], ResponseType)], Callable[([
+    RequestType,
+    'ServicerContext'], Iterator[ResponseType])], Callable[([
+    Iterator[RequestType],
+    'ServicerContext'], ResponseType)], Callable[([
+    Iterator[RequestType],
+    'ServicerContext'], Iterator[ResponseType])])]

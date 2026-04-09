@@ -1,0 +1,48 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: message_count_tokens_params.pyc (Python 3.11)
+
+from __future__ import annotations
+from typing import List, Union, Iterable, Optional
+from typing_extensions import Required, Annotated, TypeAlias, TypedDict
+from _utils import PropertyInfo
+from model_param import ModelParam
+from beta_tool_param import BetaToolParam
+from beta_message_param import BetaMessageParam
+from anthropic_beta_param import AnthropicBetaParam
+from beta_text_block_param import BetaTextBlockParam
+from beta_mcp_toolset_param import BetaMCPToolsetParam
+from beta_tool_choice_param import BetaToolChoiceParam
+from beta_output_config_param import BetaOutputConfigParam
+from beta_thinking_config_param import BetaThinkingConfigParam
+from beta_json_output_format_param import BetaJSONOutputFormatParam
+from beta_tool_bash_20241022_param import BetaToolBash20241022Param
+from beta_tool_bash_20250124_param import BetaToolBash20250124Param
+from beta_memory_tool_20250818_param import BetaMemoryTool20250818Param
+from beta_web_fetch_tool_20250910_param import BetaWebFetchTool20250910Param
+from beta_web_search_tool_20250305_param import BetaWebSearchTool20250305Param
+from beta_context_management_config_param import BetaContextManagementConfigParam
+from beta_tool_text_editor_20241022_param import BetaToolTextEditor20241022Param
+from beta_tool_text_editor_20250124_param import BetaToolTextEditor20250124Param
+from beta_tool_text_editor_20250429_param import BetaToolTextEditor20250429Param
+from beta_tool_text_editor_20250728_param import BetaToolTextEditor20250728Param
+from beta_tool_computer_use_20241022_param import BetaToolComputerUse20241022Param
+from beta_tool_computer_use_20250124_param import BetaToolComputerUse20250124Param
+from beta_tool_computer_use_20251124_param import BetaToolComputerUse20251124Param
+from beta_code_execution_tool_20250522_param import BetaCodeExecutionTool20250522Param
+from beta_code_execution_tool_20250825_param import BetaCodeExecutionTool20250825Param
+from beta_tool_search_tool_bm25_20251119_param import BetaToolSearchToolBm25_20251119Param
+from beta_tool_search_tool_regex_20251119_param import BetaToolSearchToolRegex20251119Param
+from beta_request_mcp_server_url_definition_param import BetaRequestMCPServerURLDefinitionParam
+__all__ = [
+    'MessageCountTokensParams',
+    'Tool']
+
+def MessageCountTokensParams():
+    '''MessageCountTokensParams'''
+    betas: "Annotated[List[AnthropicBetaParam], PropertyInfo(alias='anthropic-beta')]" = 'MessageCountTokensParams'
+
+MessageCountTokensParams = <NODE:27>(MessageCountTokensParams, 'MessageCountTokensParams', TypedDict, total = False)
+Tool: 'TypeAlias' = Union[(BetaToolParam, BetaToolBash20241022Param, BetaToolBash20250124Param, BetaCodeExecutionTool20250522Param, BetaCodeExecutionTool20250825Param, BetaToolComputerUse20241022Param, BetaMemoryTool20250818Param, BetaToolComputerUse20250124Param, BetaToolTextEditor20241022Param, BetaToolComputerUse20251124Param, BetaToolTextEditor20250124Param, BetaToolTextEditor20250429Param, BetaToolTextEditor20250728Param, BetaWebSearchTool20250305Param, BetaWebFetchTool20250910Param, BetaToolSearchToolBm25_20251119Param, BetaToolSearchToolRegex20251119Param, BetaMCPToolsetParam)]

@@ -1,0 +1,28 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: _package_info.pyc (Python 3.11)
+
+import sys
+from proto.marshal import Marshal
+
+def compile(name, attrs):
+    '''Return the package and marshal to use.
+
+    Args:
+        name (str): The name of the new class, as sent to ``type.__new__``.
+        attrs (Mapping[str, Any]): The attrs for a new class, as sent
+            to ``type.__new__``
+
+    Returns:
+        Tuple[str, ~.Marshal]:
+            - The proto package, if any (empty string otherwise).
+            - The marshal object to use.
+    '''
+    module = sys.modules.get(attrs.get('__module__'))
+    module_name = module.__name__ if hasattr(module, __name__) else ''
+    proto_module = getattr(module, '__protobuf__', object())
+    package = getattr(proto_module, 'package', module_name if module_name else '_default_package')
+    marshal = Marshal(name = getattr(proto_module, 'marshal', package))
+    return (package, marshal)

@@ -1,0 +1,452 @@
+{
+  "voices": {
+    "_comment": "타입캐스트 사이트 기반 메타데이터 (2024-12-08)",
+
+    "tc_5c3c52ca5827e00008dd7f38": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "민상",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c32dabcfa0008b0a38e": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "정섭",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c32dabcfa0008b0a38d": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "재훈",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c3c52ca5827e00008dd7f3a": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "수진",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c337ad86500073a02ce": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "상도",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c337ad86500073a02cd": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "금희",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c3c52ca5827e00008dd7f36": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "진혁",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c3c52caea9791000747155e": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "영희",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c33dabcfa0008b0a38f": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "지철",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5c789c347ad86500073a02cf": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "명희",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_5ecbbc6099979700087711d8": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "성규",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_60f7a2946f86ce86906f8a4d": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "노을",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_61130cd072f7b1a0c044b7f5": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "영규",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["documentary"],
+        "persona": ["narrator"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_612ed01c7eb720fddd3ddedf": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "재이",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["conversational"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_61659cc118732016a95fe7c6": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "하나",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["tiktok", "reels", "shorts"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_64818789444a9ae3e2e9f89d": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "유빈",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_649408f268febb61286eec85": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "선하",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_64b8fa1ef1ff6f997055188e": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "근영",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_64b8fa40ef03762a5fc0e51d": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "근혁",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_6465b87a4ee2060b333caf80": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "신욱",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["ads", "promotion"],
+        "persona": ["announcer"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_65e02cf60c83f6b4209f4343": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "최미란",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["audiobook", "storytelling"],
+        "persona": ["narrator"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_661797310ae4c893f6a25353": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "김봉만",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["voicemail", "voice_assistant"],
+        "persona": ["elder"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_6620d223b5347631a920ba83": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "강춘식",
+      "age_group": "senior",
+      "tags": {
+        "use_case": ["documentary"],
+        "persona": ["elder"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_665047498447efe731ed7021": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "윤빈",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["game"],
+        "persona": ["character"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_6731b292d944a485bc406efb": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "영지",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["tiktok", "reels", "shorts"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_6731b32e075b04a9446441a0": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "몽근",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["anime"],
+        "persona": ["character"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_6731b34b855f351b98d30ceb": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "현",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["rapper"],
+        "persona": ["artist"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_6731b38f075b04a944644218": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "재경",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["radio", "podcast"],
+        "persona": ["host"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_673eca75a1aae856ff42b80e": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "유리",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_673ecaa071c8f61f01459243": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "진한",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["elearning", "explainer"],
+        "persona": ["professional"],
+        "tone": ["calm"]
+      }
+    },
+    "tc_6747f7d2398a837cb27616a1": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "휘민",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["documentary"],
+        "persona": ["narrator"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_67512e5af2b6dbabce63f92a": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "충아",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["tiktok", "reels", "shorts"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_67919fb54fd00e0217d2cff0": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "승재",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["news_reporter"],
+        "persona": ["reporter"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_67a447d3c983ca8cea9a78ed": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "로운",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["tiktok", "reels", "shorts"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_67ad583c7848a19031f798f7": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "다빈",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["conversational"],
+        "persona": ["friendly"],
+        "tone": ["energetic"]
+      }
+    },
+    "tc_677f2ac4934cbfb52bee8a9c": {
+      "language": "kor",
+      "gender": "female",
+      "korean_name": "미소",
+      "age_group": "young_adult",
+      "tags": {
+        "use_case": ["documentary"],
+        "persona": ["narrator"],
+        "tone": ["professional"]
+      }
+    },
+    "tc_64004d0d38436e7e4f15b2d4": {
+      "language": "kor",
+      "gender": "male",
+      "korean_name": "클립킴",
+      "age_group": "adult",
+      "tags": {
+        "use_case": ["rapper"],
+        "persona": ["artist"],
+        "tone": ["energetic"]
+      }
+    }
+  },
+  "name_mappings": {
+    "Minsang": "민상",
+    "Jeongseob": "정섭",
+    "Jaehun": "재훈",
+    "Sujin": "수진",
+    "Sangdo": "상도",
+    "GeumHee": "금희",
+    "Jinhyuk": "진혁",
+    "Younghee": "영희",
+    "Jicheol": "지철",
+    "Myeonghee": "명희",
+    "Sunggyu": "성규",
+    "Noeul": "노을",
+    "Youngkyu": "영규",
+    "JaeYi": "재이",
+    "Hana": "하나",
+    "Yubin": "유빈",
+    "Seonha": "선하",
+    "Geunyeong": "근영",
+    "Geunhyeok": "근혁",
+    "Shinwook": "신욱",
+    "Miran Choi": "최미란",
+    "Bongman Kim": "김봉만",
+    "Chunsik Kang": "강춘식",
+    "Yunbin": "윤빈",
+    "Youngji": "영지",
+    "Monggun": "몽근",
+    "Hyun": "현",
+    "Jaekyung": "재경",
+    "Yuri": "유리",
+    "Jinhan": "진한",
+    "Hwimin": "휘민",
+    "Chungah": "충아",
+    "Seungjae": "승재",
+    "Rowoon": "로운",
+    "Dabin": "다빈",
+    "Miso": "미소",
+    "Klip Kim": "클립킴"
+  }
+}

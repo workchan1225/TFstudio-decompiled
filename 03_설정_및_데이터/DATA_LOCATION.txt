@@ -1,0 +1,18 @@
+TFstudio Data Location
+========================
+
+User data (projects, database, etc.) is stored in:
+  Default: %LOCALAPPDATA%\TFstudio\data
+  (Usually: C:\Users\<username>\AppData\Local\TFstudio\data)
+
+You can change this location in:
+  Settings > Storage > Storage Path
+
+This location is used for:
+  - Database (tfstudio.db)
+  - Project files
+  - Generated videos and audio
+  - Temporary files
+
+Note: Data persists across app updates.
+      When changing storage path, data is migrated automatically.

@@ -1,0 +1,137 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: pagers.pyc (Python 3.11)
+
+from typing import Any, AsyncIterator, Awaitable, Callable, Iterator, Optional, Sequence, Tuple, Union
+from google.api_core import gapic_v1
+from google.api_core import retry as retries
+from google.api_core import retry_async as retries_async
+
+try:
+    OptionalRetry = Union[(retries.Retry, gapic_v1.method._MethodDefault, None)]
+    OptionalAsyncRetry = Union[(retries_async.AsyncRetry, gapic_v1.method._MethodDefault, None)]
+except AttributeError:
+    OptionalRetry = Union[(retries.Retry, object, None)]
+    OptionalAsyncRetry = Union[(retries_async.AsyncRetry, object, None)]
+
+from google.ai.generativelanguage_v1beta.types import cache_service, cached_content
+
+class ListCachedContentsPager:
+    '''A pager for iterating through ``list_cached_contents`` requests.
+
+    This class thinly wraps an initial
+    :class:`google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse` object, and
+    provides an ``__iter__`` method to iterate through its
+    ``cached_contents`` field.
+
+    If there are more pages, the ``__iter__`` method will make additional
+    ``ListCachedContents`` requests and continue to iterate
+    through the ``cached_contents`` field on the
+    corresponding responses.
+
+    All the usual :class:`google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse`
+    attributes are available on the pager. If multiple requests are made, only
+    the most recent response is retained, and thus used for attribute lookup.
+    '''
+    
+    def __init__(self = None, method = None, request = None, response = None, *, retry, timeout, metadata):
+        '''Instantiate the pager.
+
+        Args:
+            method (Callable): The method that was originally called, and
+                which instantiated this pager.
+            request (google.ai.generativelanguage_v1beta.types.ListCachedContentsRequest):
+                The initial request object.
+            response (google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse):
+                The initial response object.
+            retry (google.api_core.retry.Retry): Designation of what errors,
+                if any, should be retried.
+            timeout (float): The timeout for this request.
+            metadata (Sequence[Tuple[str, Union[str, bytes]]]): Key/value pairs which should be
+                sent along with the request as metadata. Normally, each value must be of type `str`,
+                but for metadata keys ending with the suffix `-bin`, the corresponding values must
+                be of type `bytes`.
+        '''
+        self._method = method
+        self._request = cache_service.ListCachedContentsRequest(request)
+        self._response = response
+        self._retry = retry
+        self._timeout = timeout
+        self._metadata = metadata
+
+    
+    def __getattr__(self = None, name = None):
+        return getattr(self._response, name)
+
+    pages = (lambda self = None: pass# WARNING: Decompyle incomplete
+)()
+    
+    def __iter__(self = None):
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    def __repr__(self = None):
+        return '{0}<{1!r}>'.format(self.__class__.__name__, self._response)
+
+
+
+class ListCachedContentsAsyncPager:
+    '''A pager for iterating through ``list_cached_contents`` requests.
+
+    This class thinly wraps an initial
+    :class:`google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse` object, and
+    provides an ``__aiter__`` method to iterate through its
+    ``cached_contents`` field.
+
+    If there are more pages, the ``__aiter__`` method will make additional
+    ``ListCachedContents`` requests and continue to iterate
+    through the ``cached_contents`` field on the
+    corresponding responses.
+
+    All the usual :class:`google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse`
+    attributes are available on the pager. If multiple requests are made, only
+    the most recent response is retained, and thus used for attribute lookup.
+    '''
+    
+    def __init__(self = None, method = None, request = None, response = None, *, retry, timeout, metadata):
+        '''Instantiates the pager.
+
+        Args:
+            method (Callable): The method that was originally called, and
+                which instantiated this pager.
+            request (google.ai.generativelanguage_v1beta.types.ListCachedContentsRequest):
+                The initial request object.
+            response (google.ai.generativelanguage_v1beta.types.ListCachedContentsResponse):
+                The initial response object.
+            retry (google.api_core.retry.AsyncRetry): Designation of what errors,
+                if any, should be retried.
+            timeout (float): The timeout for this request.
+            metadata (Sequence[Tuple[str, Union[str, bytes]]]): Key/value pairs which should be
+                sent along with the request as metadata. Normally, each value must be of type `str`,
+                but for metadata keys ending with the suffix `-bin`, the corresponding values must
+                be of type `bytes`.
+        '''
+        self._method = method
+        self._request = cache_service.ListCachedContentsRequest(request)
+        self._response = response
+        self._retry = retry
+        self._timeout = timeout
+        self._metadata = metadata
+
+    
+    def __getattr__(self = None, name = None):
+        return getattr(self._response, name)
+
+    pages = (lambda self = None: pass# WARNING: Decompyle incomplete
+)()
+    
+    def __aiter__(self = None):
+        pass
+    # WARNING: Decompyle incomplete
+
+    
+    def __repr__(self = None):
+        return '{0}<{1!r}>'.format(self.__class__.__name__, self._response)

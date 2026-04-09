@@ -1,0 +1,50 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: ascii.pyc (Python 3.11)
+
+""" Python 'ascii' Codec
+
+
+Written by Marc-Andre Lemburg (mal@lemburg.com).
+
+(c) Copyright CNRI, All Rights Reserved. NO WARRANTY.
+
+"""
+import codecs
+
+class Codec(codecs.Codec):
+    encode = codecs.ascii_encode
+    decode = codecs.ascii_decode
+
+
+class IncrementalEncoder(codecs.IncrementalEncoder):
+    
+    def encode(self, input, final = (False,)):
+        return codecs.ascii_encode(input, self.errors)[0]
+
+
+
+class IncrementalDecoder(codecs.IncrementalDecoder):
+    
+    def decode(self, input, final = (False,)):
+        return codecs.ascii_decode(input, self.errors)[0]
+
+
+
+class StreamWriter(codecs.StreamWriter, Codec):
+    pass
+
+
+class StreamReader(codecs.StreamReader, Codec):
+    pass
+
+
+class StreamConverter(StreamReader, StreamWriter):
+    encode = codecs.ascii_decode
+    decode = codecs.ascii_encode
+
+
+def getregentry():
+    return codecs.CodecInfo(name = 'ascii', encode = Codec.encode, decode = Codec.decode, incrementalencoder = IncrementalEncoder, incrementaldecoder = IncrementalDecoder, streamwriter = StreamWriter, streamreader = StreamReader)

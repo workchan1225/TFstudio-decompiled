@@ -1,0 +1,34 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.11)
+
+from _api import YouTubeTranscriptApi
+from _transcripts import TranscriptList, Transcript, FetchedTranscript, FetchedTranscriptSnippet
+from _errors import YouTubeTranscriptApiException, CookieError, CookiePathInvalid, CookieInvalid, TranscriptsDisabled, NoTranscriptFound, CouldNotRetrieveTranscript, VideoUnavailable, VideoUnplayable, IpBlocked, RequestBlocked, NotTranslatable, TranslationLanguageNotAvailable, FailedToCreateConsentCookie, YouTubeRequestFailed, InvalidVideoId, AgeRestricted, YouTubeDataUnparsable, PoTokenRequired
+__all__ = [
+    'YouTubeTranscriptApi',
+    'TranscriptList',
+    'Transcript',
+    'FetchedTranscript',
+    'FetchedTranscriptSnippet',
+    'YouTubeTranscriptApiException',
+    'CookieError',
+    'CookiePathInvalid',
+    'CookieInvalid',
+    'TranscriptsDisabled',
+    'NoTranscriptFound',
+    'CouldNotRetrieveTranscript',
+    'VideoUnavailable',
+    'VideoUnplayable',
+    'IpBlocked',
+    'RequestBlocked',
+    'NotTranslatable',
+    'TranslationLanguageNotAvailable',
+    'FailedToCreateConsentCookie',
+    'YouTubeRequestFailed',
+    'InvalidVideoId',
+    'AgeRestricted',
+    'YouTubeDataUnparsable',
+    'PoTokenRequired']

@@ -1,0 +1,32 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: struct_pb2.pyc (Python 3.11)
+
+'''Generated protocol buffer code.'''
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1cgoogle/protobuf/struct.proto\x12\x0fgoogle.protobuf"\x98\x01\n\x06Struct\x12;\n\x06fields\x18\x01 \x03(\x0b2#.google.protobuf.Struct.FieldsEntryR\x06fields\x1aQ\n\x0bFieldsEntry\x12\x10\n\x03key\x18\x01 \x01(\tR\x03key\x12,\n\x05value\x18\x02 \x01(\x0b2\x16.google.protobuf.ValueR\x05value:\x028\x01"\xb2\x02\n\x05Value\x12;\n\nnull_value\x18\x01 \x01(\x0e2\x1a.google.protobuf.NullValueH\x00R\tnullValue\x12#\n\x0cnumber_value\x18\x02 \x01(\x01H\x00R\x0bnumberValue\x12#\n\x0cstring_value\x18\x03 \x01(\tH\x00R\x0bstringValue\x12\x1f\n\nbool_value\x18\x04 \x01(\x08H\x00R\tboolValue\x12<\n\x0cstruct_value\x18\x05 \x01(\x0b2\x17.google.protobuf.StructH\x00R\x0bstructValue\x12;\n\nlist_value\x18\x06 \x01(\x0b2\x1a.google.protobuf.ListValueH\x00R\tlistValueB\x06\n\x04kind";\n\tListValue\x12.\n\x06values\x18\x01 \x03(\x0b2\x16.google.protobuf.ValueR\x06values*\x1b\n\tNullValue\x12\x0e\n\nNULL_VALUE\x10\x00B\x7f\n\x13com.google.protobufB\x0bStructProtoP\x01Z/google.golang.org/protobuf/types/known/structpb\xf8\x01\x01\xa2\x02\x03GPB\xaa\x02\x1eGoogle.Protobuf.WellKnownTypesb\x06proto3')
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'google.protobuf.struct_pb2', _globals)
+if _descriptor._USE_C_DESCRIPTORS == False:
+    _globals['DESCRIPTOR']._options = None
+    _globals['DESCRIPTOR']._serialized_options = b'\n\x13com.google.protobufB\x0bStructProtoP\x01Z/google.golang.org/protobuf/types/known/structpb\xf8\x01\x01\xa2\x02\x03GPB\xaa\x02\x1eGoogle.Protobuf.WellKnownTypes'
+    _globals['_STRUCT_FIELDSENTRY']._options = None
+    _globals['_STRUCT_FIELDSENTRY']._serialized_options = b'8\x01'
+    _globals['_NULLVALUE']._serialized_start = 574
+    _globals['_NULLVALUE']._serialized_end = 601
+    _globals['_STRUCT']._serialized_start = 50
+    _globals['_STRUCT']._serialized_end = 202
+    _globals['_STRUCT_FIELDSENTRY']._serialized_start = 121
+    _globals['_STRUCT_FIELDSENTRY']._serialized_end = 202
+    _globals['_VALUE']._serialized_start = 205
+    _globals['_VALUE']._serialized_end = 511
+    _globals['_LISTVALUE']._serialized_start = 513
+    _globals['_LISTVALUE']._serialized_end = 572
+    return None

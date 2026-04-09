@@ -1,0 +1,16 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: dispatch.pyc (Python 3.11)
+
+'''
+Functions for defining unary operations.
+'''
+from __future__ import annotations
+from typing import TYPE_CHECKING, Any
+from pandas.core.dtypes.generic import ABCExtensionArray
+if TYPE_CHECKING:
+    from pandas._typing import ArrayLike
+
+def should_extension_dispatch(left = None, right = None):

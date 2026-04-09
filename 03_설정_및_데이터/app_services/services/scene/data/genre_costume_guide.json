@@ -1,0 +1,559 @@
+{
+  "_version": "1.0.0",
+  "_description": "장르별 복장 가이드 - Single Source of Truth (80+ 장르/시대)",
+  "_structure": {
+    "period": "시대/기간",
+    "male": "남성 복장 (한국어)",
+    "female": "여성 복장 (한국어)",
+    "male_en": "남성 복장 (English)",
+    "female_en": "여성 복장 (English)"
+  },
+  "guides": {
+    "고조선": {
+      "period": "고조선/청동기",
+      "male": "가죽옷, 모피, 청동 장신구, 상투",
+      "female": "가죽옷, 모피 조끼, 청동 귀걸이, 목걸이",
+      "male_en": "leather garments, fur, bronze ornaments, topknot",
+      "female_en": "leather dress, fur vest, bronze earrings and necklace"
+    },
+    "삼국": {
+      "period": "삼국시대",
+      "male": "관모, 포(袍), 바지저고리, 금관(왕족)",
+      "female": "저고리, 치마, 두루마기, 금제 장신구",
+      "male_en": "gwanmo (official hat), po (robe), hanbok pants and jeogori, gold crown for royalty",
+      "female_en": "jeogori, chima, durumagi, gold ornaments"
+    },
+    "고구려": {
+      "period": "고구려",
+      "male": "절풍(새털 장식 모자), 포, 갑옷(무관)",
+      "female": "저고리, 주름치마, 배자, 머리 장식",
+      "male_en": "jeolpung (feathered hat), po robe, armor for military",
+      "female_en": "jeogori, pleated chima, vest, hair ornaments"
+    },
+    "백제": {
+      "period": "백제",
+      "male": "관모, 긴 포, 바지저고리, 금동관",
+      "female": "저고리, 치마, 숄, 금동 장신구",
+      "male_en": "official hat, long robe, hanbok, gilt-bronze crown",
+      "female_en": "jeogori, chima, shawl, gilt-bronze ornaments"
+    },
+    "신라": {
+      "period": "신라",
+      "male": "금관, 관복, 두루마기, 옥 장신구",
+      "female": "저고리, 치마, 화려한 비단, 금관(왕족)",
+      "male_en": "gold crown, court attire, durumagi, jade ornaments",
+      "female_en": "jeogori, chima, silk, gold crown for royalty"
+    },
+    "통일신라": {
+      "period": "통일신라",
+      "male": "복두, 관복, 띠, 화(靴)",
+      "female": "저고리, 치마, 반비, 구슬 장신구",
+      "male_en": "bokdu hat, court robe, belt, boots",
+      "female_en": "jeogori, chima, banbi vest, bead ornaments"
+    },
+    "발해": {
+      "period": "발해",
+      "male": "관모, 포, 바지저고리, 가죽 허리띠",
+      "female": "저고리, 치마, 숄, 옥 장신구",
+      "male_en": "official hat, robe, hanbok, leather belt",
+      "female_en": "jeogori, chima, shawl, jade ornaments"
+    },
+    "고려": {
+      "period": "고려시대",
+      "male": "복두, 관복, 포, 금띠(관리)",
+      "female": "저고리, 치마, 장삼, 비녀",
+      "male_en": "bokdu (hat), official robe, po, gold belt for officials",
+      "female_en": "jeogori, chima, jangsam, binyeo hairpin"
+    },
+    "조선": {
+      "period": "조선시대",
+      "male": "갓, 도포, 두루마기, 바지저고리",
+      "female": "저고리, 치마, 당의, 장옷",
+      "male_en": "gat (traditional hat), dopo (overcoat), durumagi, hanbok pants and jeogori",
+      "female_en": "jeogori (jacket), chima (skirt), dangui, jangot"
+    },
+    "야담": {
+      "period": "조선시대",
+      "male": "갓, 도포, 두루마기(양반) / 패랭이, 두루마기(평민) / 장삼(승려)",
+      "female": "저고리, 치마, 당의(양반) / 저고리, 치마(평민)",
+      "male_en": "gat and dopo for noblemen, paeraengi and durumagi for commoners, jangsam for monks",
+      "female_en": "jeogori and chima with dangui for noblewomen, simple jeogori and chima for commoners"
+    },
+    "사극": {
+      "period": "조선시대",
+      "male": "갓, 도포, 관복, 익선관, 곤룡포(왕)",
+      "female": "저고리, 치마, 당의, 활옷, 적의(왕비)",
+      "male_en": "gat, dopo, court robe, ikseongwan crown, royal dragon robe",
+      "female_en": "jeogori, chima, dangui, hwarot, red court attire for queens"
+    },
+    "구한말": {
+      "period": "구한말/개화기",
+      "male": "두루마기, 중절모, 양복, 마고자",
+      "female": "저고리, 치마, 쓰개치마, 서양식 블라우스",
+      "male_en": "durumagi, fedora hat, Western suit, magoja jacket",
+      "female_en": "jeogori, chima, ssugae head covering, Western-style blouse"
+    },
+    "개화기": {
+      "period": "개화기",
+      "male": "두루마기와 중절모, 서양 정장, 학생복",
+      "female": "개량 한복, 서양식 드레스, 통치마",
+      "male_en": "durumagi with fedora, Western suit, student uniform",
+      "female_en": "reformed hanbok, Western dress, tubular skirt"
+    },
+    "일제강점기": {
+      "period": "일제강점기",
+      "male": "국민복, 두루마기, 중절모, 학생복",
+      "female": "통치마, 개량 저고리, 몸빼 바지",
+      "male_en": "national uniform, durumagi, fedora, student uniform",
+      "female_en": "tubular skirt, reformed jeogori, mompe work pants"
+    },
+    "일제": {
+      "period": "일제강점기",
+      "male": "국민복, 두루마기, 중절모, 학생복",
+      "female": "통치마, 개량 저고리, 몸빼 바지",
+      "male_en": "national uniform, durumagi, fedora, student uniform",
+      "female_en": "tubular skirt, reformed jeogori, mompe work pants"
+    },
+    "한국전쟁": {
+      "period": "6.25 전쟁",
+      "male": "군복, 국방색 의류, 낡은 양복",
+      "female": "검정 통치마, 흰 저고리, 검정 고무신",
+      "male_en": "military uniform, khaki clothing, worn suit",
+      "female_en": "black tubular skirt, white jeogori, black rubber shoes"
+    },
+    "6.25": {
+      "period": "6.25 전쟁",
+      "male": "군복, 국방색 의류, 낡은 양복",
+      "female": "검정 통치마, 흰 저고리, 검정 고무신",
+      "male_en": "military uniform, khaki clothing, worn suit",
+      "female_en": "black tubular skirt, white jeogori, black rubber shoes"
+    },
+    "1960년대": {
+      "period": "1960년대",
+      "male": "단정한 양복, 중절모, 넥타이",
+      "female": "미니스커트, 하이힐, 비하이브 헤어",
+      "male_en": "neat suit, fedora, necktie",
+      "female_en": "mini skirt, high heels, beehive hairstyle"
+    },
+    "1970년대": {
+      "period": "1970년대",
+      "male": "나팔바지, 긴 머리, 통넓은 셔츠 칼라",
+      "female": "미니스커트, 핫팬츠, 플랫폼 슈즈",
+      "male_en": "bell-bottom pants, long hair, wide collar shirt",
+      "female_en": "mini skirt, hot pants, platform shoes"
+    },
+    "1980년대": {
+      "period": "1980년대",
+      "male": "청바지, 가죽 재킷, 운동화, 펌 헤어",
+      "female": "레깅스, 어깨 패드 재킷, 볼륨 헤어",
+      "male_en": "jeans, leather jacket, sneakers, permed hair",
+      "female_en": "leggings, shoulder pad jacket, voluminous hair"
+    },
+    "1990년대": {
+      "period": "1990년대",
+      "male": "와이드 팬츠, 오버사이즈 티셔츠, 운동화",
+      "female": "원피스, 슬립 드레스, 초커 목걸이",
+      "male_en": "wide pants, oversized t-shirt, sneakers",
+      "female_en": "dress, slip dress, choker necklace"
+    },
+    "전쟁": {
+      "period": "전쟁/군사",
+      "male": "갑옷, 투구, 군복, 전투화",
+      "female": "저고리 치마 또는 군복, 간호복",
+      "male_en": "armor, helmet, military uniform, combat boots",
+      "female_en": "jeogori and chima or military attire, nurse uniform"
+    },
+    "현대": {
+      "period": "현대",
+      "male": "캐주얼 셔츠, 니트, 슬랙스, 청바지",
+      "female": "블라우스, 스커트, 원피스",
+      "male_en": "casual shirt, knitwear, slacks, jeans",
+      "female_en": "blouse, skirt, dress"
+    },
+    "로맨스": {
+      "period": "현대",
+      "male": "깔끔한 셔츠, 슬랙스, 캐주얼 정장",
+      "female": "원피스, 블라우스, 세련된 캐주얼",
+      "male_en": "neat shirt, slacks, casual suit",
+      "female_en": "dress, blouse, stylish casual wear"
+    },
+    "로맨틱코미디": {
+      "period": "현대",
+      "male": "캐주얼 셔츠, 가디건, 청바지, 스니커즈",
+      "female": "밝은 원피스, 스커트, 꽃무늬 블라우스",
+      "male_en": "casual shirt, cardigan, jeans, sneakers",
+      "female_en": "bright dress, skirt, floral blouse"
+    },
+    "멜로": {
+      "period": "현대",
+      "male": "세련된 코트, 니트, 슬랙스",
+      "female": "우아한 원피스, 트렌치코트, 하이힐",
+      "male_en": "elegant coat, knitwear, slacks",
+      "female_en": "elegant dress, trench coat, high heels"
+    },
+    "스릴러": {
+      "period": "현대",
+      "male": "다크 톤 정장, 가죽 재킷, 코트",
+      "female": "다크 톤 의상, 가죽 재킷, 코트",
+      "male_en": "dark suit, leather jacket, coat",
+      "female_en": "dark attire, leather jacket, coat"
+    },
+    "범죄": {
+      "period": "현대",
+      "male": "어두운 정장, 가죽 재킷, 선글라스",
+      "female": "어두운 의상, 가죽 재킷, 부츠",
+      "male_en": "dark suit, leather jacket, sunglasses",
+      "female_en": "dark attire, leather jacket, boots"
+    },
+    "느와르": {
+      "period": "현대/레트로",
+      "male": "트렌치코트, 중절모, 다크 정장",
+      "female": "팜 파탈 드레스, 모피, 붉은 립스틱",
+      "male_en": "trench coat, fedora, dark suit",
+      "female_en": "femme fatale dress, fur, red lipstick"
+    },
+    "액션": {
+      "period": "현대",
+      "male": "전술 조끼, 카고 팬츠, 부츠, 가죽 재킷",
+      "female": "전술복, 레깅스, 부츠, 재킷",
+      "male_en": "tactical vest, cargo pants, boots, leather jacket",
+      "female_en": "tactical gear, leggings, boots, jacket"
+    },
+    "공포": {
+      "period": "현대/다양",
+      "male": "평범한 캐주얼, 후드티, 청바지",
+      "female": "평범한 캐주얼, 원피스, 운동화",
+      "male_en": "casual wear, hoodie, jeans",
+      "female_en": "casual wear, dress, sneakers"
+    },
+    "코미디": {
+      "period": "현대",
+      "male": "화려한 패턴 셔츠, 밝은 색 바지",
+      "female": "밝은 색 원피스, 화려한 액세서리",
+      "male_en": "patterned shirt, bright pants",
+      "female_en": "bright dress, colorful accessories"
+    },
+    "의학": {
+      "period": "현대",
+      "male": "흰 가운, 수술복, 청진기",
+      "female": "흰 가운, 수술복, 간호복",
+      "male_en": "white coat, surgical scrubs, stethoscope",
+      "female_en": "white coat, surgical scrubs, nurse uniform"
+    },
+    "메디컬": {
+      "period": "현대",
+      "male": "흰 가운, 수술복, 청진기",
+      "female": "흰 가운, 수술복, 간호복",
+      "male_en": "white coat, surgical scrubs, stethoscope",
+      "female_en": "white coat, surgical scrubs, nurse uniform"
+    },
+    "법정": {
+      "period": "현대",
+      "male": "검정 법복, 정장, 넥타이",
+      "female": "검정 법복, 정장 스커트, 블라우스",
+      "male_en": "black legal robe, suit, necktie",
+      "female_en": "black legal robe, suit skirt, blouse"
+    },
+    "학원": {
+      "period": "현대",
+      "male": "교복, 체육복, 후드티",
+      "female": "교복, 체육복, 카디건",
+      "male_en": "school uniform, gym clothes, hoodie",
+      "female_en": "school uniform, gym clothes, cardigan"
+    },
+    "청춘": {
+      "period": "현대",
+      "male": "캐주얼 티셔츠, 청바지, 스니커즈",
+      "female": "원피스, 청바지, 스니커즈",
+      "male_en": "casual t-shirt, jeans, sneakers",
+      "female_en": "dress, jeans, sneakers"
+    },
+    "직장": {
+      "period": "현대",
+      "male": "정장, 셔츠, 넥타이",
+      "female": "정장 재킷, 블라우스, 슬랙스",
+      "male_en": "business suit, dress shirt, necktie",
+      "female_en": "blazer, blouse, slacks"
+    },
+    "오피스": {
+      "period": "현대",
+      "male": "정장, 셔츠, 넥타이",
+      "female": "정장 재킷, 블라우스, 슬랙스",
+      "male_en": "business suit, dress shirt, necktie",
+      "female_en": "blazer, blouse, slacks"
+    },
+    "가족": {
+      "period": "현대",
+      "male": "편안한 캐주얼, 카디건, 슬리퍼",
+      "female": "편안한 원피스, 앞치마, 실내화",
+      "male_en": "comfortable casual, cardigan, slippers",
+      "female_en": "comfortable dress, apron, indoor shoes"
+    },
+    "스포츠": {
+      "period": "현대",
+      "male": "운동복, 운동화, 스포츠 재킷",
+      "female": "운동복, 레깅스, 운동화",
+      "male_en": "sportswear, sneakers, sports jacket",
+      "female_en": "sportswear, leggings, sneakers"
+    },
+    "군사": {
+      "period": "현대",
+      "male": "군복, 전투화, 베레모, 방탄조끼",
+      "female": "군복, 전투화, 베레모",
+      "male_en": "military uniform, combat boots, beret, bulletproof vest",
+      "female_en": "military uniform, combat boots, beret"
+    },
+    "판타지": {
+      "period": "판타지",
+      "male": "로브, 갑옷, 마법사 의상, 중세풍 의상",
+      "female": "로브, 드레스, 마법사 의상, 중세풍 의상",
+      "male_en": "robe, armor, wizard attire, medieval clothing",
+      "female_en": "robe, dress, wizard attire, medieval clothing"
+    },
+    "하이판타지": {
+      "period": "판타지",
+      "male": "판금 갑옷, 망토, 마법사 로브, 가죽 부츠",
+      "female": "드레스, 코르셋, 망토, 보석 장식",
+      "male_en": "plate armor, cloak, wizard robe, leather boots",
+      "female_en": "dress, corset, cloak, jeweled ornaments"
+    },
+    "동양판타지": {
+      "period": "동양 판타지",
+      "male": "도복, 장포, 검집, 두건",
+      "female": "비단 장포, 허리띠, 비녀, 부채",
+      "male_en": "martial arts robe, long gown, sword sheath, headband",
+      "female_en": "silk gown, sash, hairpin, folding fan"
+    },
+    "다크판타지": {
+      "period": "다크 판타지",
+      "male": "어두운 갑옷, 후드 망토, 가죽 장갑",
+      "female": "어두운 로브, 코르셋, 가죽 부츠",
+      "male_en": "dark armor, hooded cloak, leather gloves",
+      "female_en": "dark robe, corset, leather boots"
+    },
+    "무협": {
+      "period": "무협",
+      "male": "도복, 장포, 띠, 검집, 두건",
+      "female": "무협 복장, 허리띠, 비녀, 검",
+      "male_en": "martial arts robe, gown, sash, sword sheath, headband",
+      "female_en": "martial arts attire, sash, hairpin, sword"
+    },
+    "이세계": {
+      "period": "이세계/판타지",
+      "male": "여행자 복장, 망토, 가죽 갑옷",
+      "female": "모험가 복장, 망토, 가죽 부츠",
+      "male_en": "traveler outfit, cloak, leather armor",
+      "female_en": "adventurer outfit, cloak, leather boots"
+    },
+    "SF": {
+      "period": "미래",
+      "male": "우주복, 미래형 정장, 테크 슈트",
+      "female": "우주복, 미래형 의상, 테크 슈트",
+      "male_en": "space suit, futuristic suit, tech suit",
+      "female_en": "space suit, futuristic attire, tech suit"
+    },
+    "사이버펑크": {
+      "period": "미래/사이버펑크",
+      "male": "네온 조명 재킷, 사이버네틱 임플란트, 고글",
+      "female": "네온 의상, 사이버네틱 장식, LED 액세서리",
+      "male_en": "neon-lit jacket, cybernetic implants, goggles",
+      "female_en": "neon outfit, cybernetic accessories, LED accessories"
+    },
+    "스팀펑크": {
+      "period": "스팀펑크",
+      "male": "빅토리아풍 정장, 고글, 기어 장식, 시계 체인",
+      "female": "코르셋, 러플 스커트, 고글, 기어 액세서리",
+      "male_en": "Victorian suit, goggles, gear decorations, watch chain",
+      "female_en": "corset, ruffle skirt, goggles, gear accessories"
+    },
+    "우주": {
+      "period": "우주/SF",
+      "male": "우주복, 유니폼, 헬멧",
+      "female": "우주복, 유니폼, 헬멧",
+      "male_en": "space suit, uniform, helmet",
+      "female_en": "space suit, uniform, helmet"
+    },
+    "포스트아포칼립스": {
+      "period": "종말 이후",
+      "male": "낡은 가죽 재킷, 고글, 스카프, 군용 부츠",
+      "female": "낡은 의류, 방독면, 부츠, 무기 벨트",
+      "male_en": "worn leather jacket, goggles, scarf, military boots",
+      "female_en": "worn clothing, gas mask, boots, weapon belt"
+    },
+    "좀비": {
+      "period": "현대/종말",
+      "male": "더러운 캐주얼, 방어구, 무기",
+      "female": "더러운 캐주얼, 방어구, 무기",
+      "male_en": "dirty casual wear, protective gear, weapons",
+      "female_en": "dirty casual wear, protective gear, weapons"
+    },
+    "뱀파이어": {
+      "period": "고딕/현대",
+      "male": "검정 망토, 빅토리아풍 정장, 붉은 액센트",
+      "female": "검정 드레스, 망토, 붉은 립스틱, 보석",
+      "male_en": "black cape, Victorian suit, red accents",
+      "female_en": "black dress, cape, red lipstick, jewels"
+    },
+    "슈퍼히어로": {
+      "period": "현대/히어로",
+      "male": "스판덱스 슈트, 망토, 마스크",
+      "female": "스판덱스 슈트, 망토, 마스크",
+      "male_en": "spandex suit, cape, mask",
+      "female_en": "spandex suit, cape, mask"
+    },
+    "중국고대": {
+      "period": "중국 고대",
+      "male": "한복(漢服), 관, 옥대",
+      "female": "한복(漢服), 비녀, 옥 장신구",
+      "male_en": "hanfu, guan crown, jade belt",
+      "female_en": "hanfu, hairpin, jade ornaments"
+    },
+    "당나라": {
+      "period": "당나라",
+      "male": "원령포, 복두, 옥대",
+      "female": "고허리 치마, 피파수매, 화전",
+      "male_en": "round-collar robe, futou hat, jade belt",
+      "female_en": "high-waist skirt, pipa sleeves, flower ornament"
+    },
+    "청나라": {
+      "period": "청나라",
+      "male": "장포, 마괘, 변발",
+      "female": "치파오, 화분저, 만주족 머리 장식",
+      "male_en": "changpao robe, magua jacket, queue hairstyle",
+      "female_en": "qipao, huapendi shoes, Manchu hair ornaments"
+    },
+    "일본시대극": {
+      "period": "일본 시대극",
+      "male": "기모노, 하오리, 하카마, 카타나",
+      "female": "기모노, 오비, 조리",
+      "male_en": "kimono, haori jacket, hakama pants, katana",
+      "female_en": "kimono, obi belt, zori sandals"
+    },
+    "사무라이": {
+      "period": "일본 전국시대",
+      "male": "갑옷, 카부토 투구, 카타나, 하오리",
+      "female": "기모노, 오비, 칸자시",
+      "male_en": "yoroi armor, kabuto helmet, katana, haori",
+      "female_en": "kimono, obi belt, kanzashi hairpin"
+    },
+    "중세유럽": {
+      "period": "중세 유럽",
+      "male": "판금 갑옷, 투구, 사슬 갑옷, 서코트",
+      "female": "긴 드레스, 헤닌 모자, 코르셋",
+      "male_en": "plate armor, helmet, chainmail, surcoat",
+      "female_en": "long dress, hennin headdress, corset"
+    },
+    "르네상스": {
+      "period": "르네상스",
+      "male": "더블릿, 호즈, 베레모, 러프 칼라",
+      "female": "화려한 드레스, 코르셋, 진주 장식",
+      "male_en": "doublet, hose, beret, ruff collar",
+      "female_en": "elaborate dress, corset, pearl ornaments"
+    },
+    "빅토리아": {
+      "period": "빅토리아 시대",
+      "male": "프록코트, 실크햇, 조끼, 회중시계",
+      "female": "크리놀린 드레스, 코르셋, 보닛",
+      "male_en": "frock coat, top hat, waistcoat, pocket watch",
+      "female_en": "crinoline dress, corset, bonnet"
+    },
+    "서부": {
+      "period": "미국 서부",
+      "male": "카우보이 모자, 가죽 조끼, 부츠, 반다나",
+      "female": "긴 스커트, 블라우스, 보닛, 숄",
+      "male_en": "cowboy hat, leather vest, boots, bandana",
+      "female_en": "long skirt, blouse, bonnet, shawl"
+    },
+    "웨스턴": {
+      "period": "미국 서부",
+      "male": "카우보이 모자, 가죽 조끼, 부츠, 반다나",
+      "female": "긴 스커트, 블라우스, 보닛, 숄",
+      "male_en": "cowboy hat, leather vest, boots, bandana",
+      "female_en": "long skirt, blouse, bonnet, shawl"
+    },
+    "1920년대": {
+      "period": "1920년대 재즈시대",
+      "male": "핀스트라이프 정장, 페도라, 서스펜더",
+      "female": "플래퍼 드레스, 헤드밴드, 진주 목걸이",
+      "male_en": "pinstripe suit, fedora, suspenders",
+      "female_en": "flapper dress, headband, pearl necklace"
+    },
+    "1950년대": {
+      "period": "1950년대",
+      "male": "가죽 재킷, 청바지, 화이트 티, 포마드 헤어",
+      "female": "풀스커트, 페티코트, 포니테일",
+      "male_en": "leather jacket, jeans, white tee, pomade hair",
+      "female_en": "full skirt, petticoat, ponytail"
+    },
+    "로마": {
+      "period": "고대 로마",
+      "male": "토가, 튜닉, 샌들, 월계관",
+      "female": "스톨라, 팔라, 샌들, 금 장신구",
+      "male_en": "toga, tunic, sandals, laurel wreath",
+      "female_en": "stola, palla, sandals, gold ornaments"
+    },
+    "그리스": {
+      "period": "고대 그리스",
+      "male": "키톤, 히마티온, 샌들, 월계관",
+      "female": "펩로스, 히마티온, 샌들, 금 머리띠",
+      "male_en": "chiton, himation, sandals, laurel wreath",
+      "female_en": "peplos, himation, sandals, gold headband"
+    },
+    "이집트": {
+      "period": "고대 이집트",
+      "male": "셴디트 허리띠, 넓은 칼라, 네메스 두건",
+      "female": "칼라시리스 드레스, 넓은 칼라, 가발",
+      "male_en": "shendyt kilt, broad collar, nemes headdress",
+      "female_en": "kalasiris dress, broad collar, wig"
+    },
+    "바이킹": {
+      "period": "바이킹",
+      "male": "튜닉, 모피 망토, 가죽 갑옷, 투구",
+      "female": "긴 드레스, 앞치마, 브로치, 모피",
+      "male_en": "tunic, fur cloak, leather armor, helmet",
+      "female_en": "long dress, apron, brooches, fur"
+    },
+    "아랍": {
+      "period": "아랍/중동",
+      "male": "토브, 쿠피야, 아갈, 비슈트",
+      "female": "아바야, 히잡, 카프탄, 금 장신구",
+      "male_en": "thobe, kufiyya, agal, bisht cloak",
+      "female_en": "abaya, hijab, kaftan, gold jewelry"
+    },
+    "인도": {
+      "period": "인도",
+      "male": "셔와니, 도티, 터번, 쿠르타",
+      "female": "사리, 촐리, 빈디, 금 장신구",
+      "male_en": "sherwani, dhoti, turban, kurta",
+      "female_en": "sari, choli, bindi, gold jewelry"
+    },
+    "페르시아": {
+      "period": "페르시아",
+      "male": "카프탄, 터번, 넓은 바지, 허리띠",
+      "female": "긴 드레스, 베일, 금 장신구",
+      "male_en": "kaftan, turban, loose trousers, sash",
+      "female_en": "long dress, veil, gold ornaments"
+    }
+  },
+  "period_keywords": {
+    "조선": "조선",
+    "고려": "고려",
+    "삼국": "삼국",
+    "1920": "1920년대",
+    "1930": "1930년대",
+    "1940": "1940년대",
+    "1950": "1950년대",
+    "1960": "1960년대",
+    "1970": "1970년대",
+    "1980": "1980년대",
+    "1990": "1990년대",
+    "일제": "일제강점기",
+    "중세": "중세유럽",
+    "빅토리아": "빅토리아",
+    "로마": "로마",
+    "에도": "일본시대극",
+    "당나라": "당나라",
+    "청나라": "청나라"
+  },
+  "default_guide_key": "현대"
+}

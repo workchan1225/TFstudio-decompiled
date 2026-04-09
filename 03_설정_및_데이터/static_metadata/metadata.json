@@ -1,0 +1,312 @@
+{
+  "version": 3,
+  "references": [
+    {
+      "id": "ref-1",
+      "name": "실화/사연형 - 분노 강조",
+      "filename": "1.png",
+      "category": "dramatic",
+      "description": "Top 2-line bold hook with alternating yellow, green, and red emphasis over a subject-right dramatic layout.",
+      "grammarSummary": "Two-line top headline with black-weight text, multiple highlight colors, and a right-weighted close-up composition.",
+      "grammarHints": {
+        "layout": "Use a full-width headline block across the top and keep the subject dominant on the right side.",
+        "subjectWeight": "One large face close-up should anchor the right third of the frame.",
+        "hookStructure": "Line 1 delivers the emotional trigger, line 2 adds the cause or consequence.",
+        "evidencePattern": "Use background or prop clues that explain conflict without reusing the sample identity."
+      },
+      "sampleContent": {
+        "people": "elderly man angry close-up",
+        "background": "gray alley background",
+        "objects": "street confrontation context",
+        "storySignals": "family or neighborhood dispute",
+        "identityTokens": "elderly male face"
+      },
+      "textStyle": {
+        "lines": 2,
+        "highlightColors": ["#FFFF00", "#00FF00", "#FF0000"],
+        "colorNames": "bright yellow, lime green, red",
+        "colorRule": "Each keyword phrase gets a different highlight color. Primary words = yellow, secondary = green, emotional climax = red",
+        "fontWeight": "black",
+        "position": "top-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "very large, covering 30-40% of image width"
+      },
+      "visualStyle": "photorealistic",
+      "mood": "anger",
+      "composition": "subject-right, text-top"
+    },
+    {
+      "id": "ref-2",
+      "name": "실화/사연형 - 슬픔 강조",
+      "filename": "2.png",
+      "category": "dramatic",
+      "description": "Top 2-line hook with white base text, a single red emotional accent, and centered portrait framing.",
+      "grammarSummary": "Centered portrait with a two-line headline at the top and one selective red emphasis point.",
+      "grammarHints": {
+        "layout": "Keep the text across the top and preserve a centered emotional portrait below it.",
+        "subjectWeight": "A single close-up face should remain centered and fill most of the frame.",
+        "hookStructure": "Use one calm setup line and one emotionally heightened payoff line.",
+        "evidencePattern": "Support the mood with domestic or intimate context rather than copying the sample room."
+      },
+      "sampleContent": {
+        "people": "elderly woman crying close-up",
+        "background": "living room background",
+        "objects": "tearful family moment",
+        "storySignals": "loss, regret, or reunion",
+        "identityTokens": "elderly female portrait"
+      },
+      "textStyle": {
+        "lines": 2,
+        "highlightColors": ["#FFFFFF", "#FF0000"],
+        "colorNames": "white, red",
+        "colorRule": "Most text in white, one key emotional phrase highlighted in red for emphasis",
+        "fontWeight": "black",
+        "position": "top-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "very large, covering 30-40% of image width"
+      },
+      "visualStyle": "photorealistic",
+      "mood": "sadness",
+      "composition": "subject-center, text-top"
+    },
+    {
+      "id": "ref-3",
+      "name": "판타지/모험형 - 수채화",
+      "filename": "3.png",
+      "category": "illustration",
+      "description": "Vertical left text with a light auxiliary bubble and a right-side hero in watercolor illustration.",
+      "grammarSummary": "Three-line vertical headline on the left, airy negative space, and a right-side illustrated protagonist.",
+      "grammarHints": {
+        "layout": "Stack the main hook vertically along the left side and leave breathing room around the hero.",
+        "subjectWeight": "A single stylized hero should occupy the right half with clear silhouette separation.",
+        "hookStructure": "Split the hook into short stacked beats rather than long horizontal sentences.",
+        "evidencePattern": "Use fantasy props or weather cues that fit the scenario, not the sample explorer identity."
+      },
+      "sampleContent": {
+        "people": "snow explorer character on right",
+        "background": "icy outdoor adventure background",
+        "objects": "speech bubble, winter gear",
+        "storySignals": "fantasy expedition",
+        "identityTokens": "snow explorer"
+      },
+      "textStyle": {
+        "lines": 3,
+        "highlightColors": ["#FFFFFF"],
+        "colorNames": "white",
+        "colorRule": "All main text in white. Optional gray speech bubble with sub-text at top-right corner",
+        "fontWeight": "bold",
+        "position": "left-vertical",
+        "hasOutline": true,
+        "outlineColor": "soft dark outline, lighter than dramatic styles",
+        "fontSize": "large vertical text, each character stacked"
+      },
+      "visualStyle": "watercolor-illustration",
+      "mood": "adventure",
+      "composition": "subject-right, text-left"
+    },
+    {
+      "id": "ref-4",
+      "name": "직장/사회형 - 갈등 강조",
+      "filename": "4.png",
+      "category": "dramatic",
+      "description": "Bottom 2-line conflict hook with yellow and pink accents over a crowded workplace composition.",
+      "grammarSummary": "Bottom-heavy text block with color-coded conflict keywords and a multi-person tension layout.",
+      "grammarHints": {
+        "layout": "Reserve the bottom band for the main hook and keep the character tension visible above it.",
+        "subjectWeight": "Use two or more readable figures with one dominant focal reaction.",
+        "hookStructure": "Lead with the conflict trigger and end with the emotional or social consequence.",
+        "evidencePattern": "Use props, posture, or location clues that explain workplace stakes without copying the sample room."
+      },
+      "sampleContent": {
+        "people": "multiple tense office characters",
+        "background": "conference room scene",
+        "objects": "meeting table, office documents",
+        "storySignals": "workplace conflict",
+        "identityTokens": "conference confrontation"
+      },
+      "textStyle": {
+        "lines": 2,
+        "highlightColors": ["#FFFF00", "#FF69B4", "#FFFFFF"],
+        "colorNames": "yellow, hot pink, white",
+        "colorRule": "Base text in white, action words highlighted in yellow, emotional/conflict words in hot pink",
+        "fontWeight": "black",
+        "position": "bottom-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "very large, covering 30-40% of image width"
+      },
+      "visualStyle": "photorealistic",
+      "mood": "tension",
+      "composition": "multi-person, text-bottom"
+    },
+    {
+      "id": "ref-5",
+      "name": "자기계발형 - 비포/애프터",
+      "filename": "5.png",
+      "category": "transformation",
+      "description": "Bottom 2-line before/after hook with split composition and a red-to-white problem/solution color contrast.",
+      "grammarSummary": "Split-screen transformation layout with contrasting problem and solution zones plus a bottom caption band.",
+      "grammarHints": {
+        "layout": "Separate the frame into clear before and after halves, then anchor the hook at the bottom.",
+        "subjectWeight": "Balance both sides evenly so the transformation is readable at a glance.",
+        "hookStructure": "Use one negative phrase versus one positive phrase to create instant contrast.",
+        "evidencePattern": "Show visual change through posture, props, or environment rather than copying the sample character."
+      },
+      "sampleContent": {
+        "people": "cartoon before and after characters",
+        "background": "split left-right transformation background",
+        "objects": "self-improvement visual markers",
+        "storySignals": "failure to success contrast",
+        "identityTokens": "before after cartoon"
+      },
+      "textStyle": {
+        "lines": 2,
+        "highlightColors": ["#FF0000", "#FFFFFF"],
+        "colorNames": "red, white",
+        "colorRule": "Problem/negative keywords in red, solution/positive keywords in white. Creates visual contrast between failure and success",
+        "fontWeight": "black",
+        "position": "bottom-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "large, spanning full width"
+      },
+      "visualStyle": "cartoon-illustration",
+      "mood": "transformation",
+      "composition": "split-left-right, text-bottom"
+    },
+    {
+      "id": "ref-6",
+      "name": "경제/재테크형 - 긍정 강조",
+      "filename": "6.png",
+      "category": "informational",
+      "description": "Top-and-bottom informational hook with white base text plus green and yellow financial emphasis.",
+      "grammarSummary": "Three-line finance-friendly layout with one short top hook, a supporting lower block, and central infographic character weight.",
+      "grammarHints": {
+        "layout": "Place a short headline at the top and two supporting lines near the bottom around a central figure.",
+        "subjectWeight": "A simple central figure should support the message without overpowering the text.",
+        "hookStructure": "Open with a big promise or result, then add detail lines below it.",
+        "evidencePattern": "Use charts, currency cues, or growth signals that match the scenario instead of copying the sample icons."
+      },
+      "sampleContent": {
+        "people": "stick-figure character center",
+        "background": "finance explainer background",
+        "objects": "money and growth icons",
+        "storySignals": "wealth growth explanation",
+        "identityTokens": "center finance character"
+      },
+      "textStyle": {
+        "lines": 3,
+        "highlightColors": ["#FFFFFF", "#FFFF00", "#00FF00"],
+        "colorNames": "white, yellow, green",
+        "colorRule": "Base text in white with black outline. Key money/amount words in yellow. Growth/positive words in green. Top line = main hook, bottom lines = supporting detail",
+        "fontWeight": "black",
+        "position": "top-and-bottom",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "large, covering significant area"
+      },
+      "visualStyle": "cartoon-illustration",
+      "mood": "positive",
+      "composition": "center-character, text-top-bottom"
+    },
+    {
+      "id": "ref-7",
+      "name": "뉴스/이슈형 - 놀라움 강조",
+      "filename": "7.png",
+      "category": "informational",
+      "description": "Bottom 2-line surprise hook with a red first line, white second line, and centered reaction character.",
+      "grammarSummary": "Urgent two-line news layout with strong red headline emphasis and a centered reaction focal point.",
+      "grammarHints": {
+        "layout": "Use a bottom caption band with the main shock statement first and context second.",
+        "subjectWeight": "A central reaction figure should remain readable even with strong background symbols.",
+        "hookStructure": "Lead with the shocking statement in red, then clarify the context in white.",
+        "evidencePattern": "Support the issue with topical symbols or skyline cues that fit the script instead of copying the sample country."
+      },
+      "sampleContent": {
+        "people": "surprised stick-figure character",
+        "background": "flag and city skyline background",
+        "objects": "growth graph",
+        "storySignals": "breaking issue explainer",
+        "identityTokens": "surprised news character"
+      },
+      "textStyle": {
+        "lines": 2,
+        "highlightColors": ["#FF0000", "#FFFFFF"],
+        "colorNames": "red, white",
+        "colorRule": "First line (shocking/attention phrase) in RED. Second line (detail/context) in WHITE. Creates urgency hierarchy",
+        "fontWeight": "black",
+        "position": "bottom-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "large, spanning full width"
+      },
+      "visualStyle": "cartoon-illustration",
+      "mood": "surprise",
+      "composition": "center-character, text-bottom"
+    },
+    {
+      "id": "ref-8",
+      "name": "경제/투자형 - 인포그래픽",
+      "filename": "8.png",
+      "category": "infographic",
+      "description": "Single-line top headline with data-driven infographic layout, yellow and red numeric emphasis, and structured supporting visuals.",
+      "grammarSummary": "Top headline plus structured infographic field with highlighted numbers and supporting data labels.",
+      "grammarHints": {
+        "layout": "Keep one strong headline at the top and organize the remaining space into clean data blocks or timeline cues.",
+        "subjectWeight": "Data graphics should carry most of the frame, with any character treated as a secondary support.",
+        "hookStructure": "Focus the hook on one key claim or number, then let the infographic reinforce it.",
+        "evidencePattern": "Use charts, labels, and icons that match the script topic rather than reproducing the sample sequence."
+      },
+      "sampleContent": {
+        "people": "small stick-figure support character",
+        "background": "blue gradient infographic background",
+        "objects": "timeline, money icons, data labels",
+        "storySignals": "investment explainer",
+        "identityTokens": "timeline infographic"
+      },
+      "textStyle": {
+        "lines": 1,
+        "highlightColors": ["#FFFFFF", "#FFFF00", "#FF0000"],
+        "colorNames": "white, yellow, red",
+        "colorRule": "Main headline in white. Key numbers/amounts highlighted in yellow. Extreme values (like 10x) in red. Data labels in smaller white text throughout the infographic",
+        "fontWeight": "black",
+        "position": "top-full-width",
+        "hasOutline": true,
+        "outlineColor": "black thick stroke",
+        "fontSize": "main headline large, data labels medium-small"
+      },
+      "visualStyle": "infographic-illustration",
+      "mood": "educational",
+      "composition": "data-visualization, text-top"
+    }
+  ],
+  "categories": [
+    {
+      "id": "dramatic",
+      "name": "드라마틱/사연형",
+      "description": "감정적 반응을 유발하는 실화/사연 스타일"
+    },
+    {
+      "id": "illustration",
+      "name": "일러스트/판타지",
+      "description": "수채화, 만화 스타일의 일러스트레이션"
+    },
+    {
+      "id": "transformation",
+      "name": "변화/자기계발",
+      "description": "비포/애프터 변화를 보여주는 스타일"
+    },
+    {
+      "id": "informational",
+      "name": "정보/뉴스형",
+      "description": "정보 전달 중심의 캐릭터 일러스트"
+    },
+    {
+      "id": "infographic",
+      "name": "인포그래픽",
+      "description": "데이터/타임라인 시각화 중심"
+    }
+  ]
+}

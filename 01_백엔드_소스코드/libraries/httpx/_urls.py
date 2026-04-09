@@ -1,0 +1,94 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: _urls.pyc (Python 3.11)
+
+from __future__ import annotations
+import typing
+from urllib.parse import parse_qs, unquote, urlencode
+import idna
+from _types import QueryParamTypes
+from _urlparse import urlparse
+from _utils import primitive_value_to_str
+__all__ = [
+    'URL',
+    'QueryParams']
+
+class URL:
+    '''
+    url = httpx.URL("HTTPS://jo%40email.com:a%20secret@müller.de:1234/pa%20th?search=ab#anchorlink")
+
+    assert url.scheme == "https"
+    assert url.username == "jo@email.com"
+    assert url.password == "a secret"
+    assert url.userinfo == b"jo%40email.com:a%20secret"
+    assert url.host == "müller.de"
+    assert url.raw_host == b"xn--mller-kva.de"
+    assert url.port == 1234
+    assert url.netloc == b"xn--mller-kva.de:1234"
+    assert url.path == "/pa th"
+    assert url.query == b"?search=ab"
+    assert url.raw_path == b"/pa%20th?search=ab"
+    assert url.fragment == "anchorlink"
+
+    The components of a URL are broken down like this:
+
+       https://jo%40email.com:a%20secret@müller.de:1234/pa%20th?search=ab#anchorlink
+    [scheme]   [  username  ] [password] [ host ][port][ path ] [ query ] [fragment]
+               [       userinfo        ] [   netloc   ][    raw_path    ]
+
+    Note that:
+
+    * `url.scheme` is normalized to always be lowercased.
+
+    * `url.host` is normalized to always be lowercased. Internationalized domain
+      names are represented in unicode, without IDNA encoding applied. For instance:
+
+      url = httpx.URL("http://中国.icom.museum")
+      assert url.host == "中国.icom.museum"
+      url = httpx.URL("http://xn--fiqs8s.icom.museum")
+      assert url.host == "中国.icom.museum"
+
+    * `url.raw_host` is normalized to always be lowercased, and is IDNA encoded.
+
+      url = httpx.URL("http://中国.icom.museum")
+      assert url.raw_host == b"xn--fiqs8s.icom.museum"
+      url = httpx.URL("http://xn--fiqs8s.icom.museum")
+      assert url.raw_host == b"xn--fiqs8s.icom.museum"
+
+    * `url.port` is either None or an integer. URLs that include the default port for
+      "http", "https", "ws", "wss", and "ftp" schemes have their port
+      normalized to `None`.
+
+      assert httpx.URL("http://example.com") == httpx.URL("http://example.com:80")
+      assert httpx.URL("http://example.com").port is None
+      assert httpx.URL("http://example.com:80").port is None
+
+    * `url.userinfo` is raw bytes, without URL escaping. Usually you\'ll want to work
+      with `url.username` and `url.password` instead, which handle the URL escaping.
+
+    * `url.raw_path` is raw bytes of both the path and query, without URL escaping.
+      This portion is used as the target when constructing HTTP requests. Usually you\'ll
+      want to work with `url.path` instead.
+
+    * `url.query` is raw bytes, without URL escaping. A URL query string portion can
+      only be properly URL escaped when decoding the parameter names and values
+      themselves.
+    '''
+    
+    def __init__(self = None, url = None, **kwargs):
+        pass
+    # WARNING: Decompyle incomplete
+
+    scheme = (lambda self = None: self._uri_reference.scheme)()
+    raw_scheme = (lambda self = None: self._uri_reference.scheme.encode('ascii'))()
+    userinfo = (lambda self = None: self._uri_reference.userinfo.encode('ascii'))()
+    username = (lambda self = None: userinfo = self._uri_reference.userinfounquote(userinfo.partition(':')[0]))()
+    password = (lambda self = None: userinfo = self._uri_reference.userinfounquote(userinfo.partition(':')[2]))()
+    host = (lambda self = None: host = self._uri_reference.hostif host.startswith('xn--'):
+host = idna.decode(host)host)()
+    raw_host = (lambda self = None: self._uri_reference.host.encode('ascii'))()
+    port = (lambda self = None: self._uri_reference.port)()
+    netloc = (lambda self = None: self._uri_reference.netloc.encode('ascii'))()
+    path = (lambda self = None:

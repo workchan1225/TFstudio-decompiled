@@ -1,0 +1,8 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: mono.pyc (Python 3.11)
+
+cdef = []
+cdef.append('\ntypedef struct _MonoDomain MonoDomain;\ntypedef struct _MonoAssembly MonoAssembly;\ntypedef struct _MonoImage MonoImage;\ntypedef struct _MonoMethodDesc MonoMethodDesc;\ntypedef struct _MonoMethod MonoMethod;\ntypedef struct _MonoObject MonoObject;\n\ntypedef enum {\n\tMONO_DEBUG_FORMAT_NONE,\n\tMONO_DEBUG_FORMAT_MONO,\n\t/* Deprecated, the mdb debugger is not longer supported. */\n\tMONO_DEBUG_FORMAT_DEBUGGER\n} MonoDebugFormat;\n\nchar* mono_get_runtime_build_info (void);\n\nMonoDomain* mono_jit_init(const char *root_domain_name);\nvoid mono_jit_cleanup(MonoDomain *domain);\nvoid mono_jit_parse_options(int argc, char * argv[]);\n\nvoid mono_debug_init (MonoDebugFormat format);\n\nMonoAssembly* mono_domain_assembly_open(MonoDomain *domain, const char *name);\nMonoImage* mono_assembly_get_image(MonoAssembly *assembly);\n\nvoid mono_domain_set_config(MonoDomain *domain, const char *base_dir, const char *config_file_name);\nvoid mono_config_parse(const char* path);\n\nMonoMethodDesc* mono_method_desc_new(const char* name, bool include_namespace);\nMonoMethod* mono_method_desc_search_in_image(MonoMethodDesc *method_desc, MonoImage *image);\nvoid mono_method_desc_free(MonoMethodDesc *method_desc);\n\nMonoObject* mono_runtime_invoke(MonoMethod *method, void *obj, void **params, MonoObject **exc);\n\nvoid* mono_object_unbox(MonoObject *object);\n\nvoid mono_set_dirs(const char *assembly_dir, const char* config_dir);\n\nvoid mono_set_signal_chaining(bool chain_signals);\n\nvoid mono_trace_set_level_string(const char* value);\nvoid mono_trace_set_mask_string(const char* value);\n\n')

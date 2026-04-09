@@ -1,0 +1,20 @@
+# Source: pycdc (Decompyle++)
+# Quality: HIGH - actual Python source
+
+# Source Generated with Decompyle++
+# File: version_header.pyc (Python 3.11)
+
+API_VERSION_METADATA_KEY = 'x-goog-api-version'
+
+def to_api_version_header(version_identifier):
+    '''Returns data for the API Version header for the given `version_identifier`.
+
+    Args:
+        version_identifier (str): The version identifier to be used in the
+            tuple returned.
+
+    Returns:
+        Tuple(str, str): A tuple containing the API Version metadata key and
+            value.
+    '''
+    return (API_VERSION_METADATA_KEY, version_identifier)
