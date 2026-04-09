@@ -2,7 +2,6 @@
 
 - **작업일:** 2026-04-09
 - **대상:** `C:\Program Files\TFstudio` (PyInstaller 패키징 데스크톱 앱)
-- **결과물 위치:** `C:\Users\User\Desktop\윙스님 지시\TFstudio_decompiled\`
 
 ---
 
